@@ -1,7 +1,7 @@
 {
   "27FBF551": {
-    "service": "tunein_radio",
-    "uri": "http://opml.radiotime.com/Tune.ashx?id=s2602"
+    "service": "webradio",
+    "uri": "http://http-live.sr.se/p3-mp3-192"
   },
   "D71F5A51": {
     "service": "webradio",

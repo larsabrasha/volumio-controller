@@ -1,0 +1,1 @@
+KERNEL=="ttyACM0", ENV{SYSTEMD_WANTS}="volumio-controller.service"

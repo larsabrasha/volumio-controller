@@ -1,0 +1,15 @@
+[Unit]
+Description = Volumio Controller
+
+[Service]
+ExecStart=/usr/local/bin/node /home/volumio/volumio-controller/index.js
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=volumio-controller
+User=volumio
+Group=volumio
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
