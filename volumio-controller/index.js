@@ -1,6 +1,6 @@
 const SerialPort = require("serialport");
 const Readline = SerialPort.parsers.Readline;
-var io = require("socket.io-client");
+const io = require("socket.io-client");
 
 const controls = require("./controls.json");
 const music = require("./music.json");
@@ -10,14 +10,18 @@ const volumioServer = process.env.VOLUMIO_SERVER || "http://localhost:3000"; // 
 
 var socket = io.connect(volumioServer);
 
+var status = null;
+
 socket.on("pushState", function(data) {
   console.log("status: " + data.status);
-  console.log(data.artist + " - " + data.album + " - " + data.title);
+  status = data.status;
 });
 
 socket.on("disconnect", function() {
   console.log("disconnected");
 });
+
+socket.emit("getState");
 
 const port = new SerialPort(serialPort, {
   baudRate: 9600
@@ -37,19 +41,19 @@ parser.on("data", data => {
 
   if (controlItem) {
     console.log(controlItem);
-    socket.emit(controlItem);
+
+    if (controlItem === "playpause") {
+      if (status === "play") {
+        socket.emit("pause");
+      } else {
+        socket.emit("play");
+      }
+    } else {
+      socket.emit(controlItem);
+    }
   } else if (musicItem) {
     console.log(musicItem);
-
-    if (musicItem.album) {
-      const encodedArtist = encodeURIComponent(
-        musicItem.artist ? musicItem.artist : ""
-      );
-      const encodedAlbum = encodeURIComponent(musicItem.album);
-      const uri = "albums://" + encodedArtist + "/" + encodedAlbum;
-      console.log(uri);
-      socket.emit("replaceAndPlay", { uri: uri });
-    }
+    socket.emit("replaceAndPlay", musicItem);
   }
 });
 

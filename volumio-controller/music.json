@@ -1,26 +1,51 @@
 {
-  "B7841040": {
-    "artist": "Salem Al Fakir",
-    "album": "This Is Who I Am"
+  "27FBF551": {
+    "service": "tunein_radio",
+    "uri": "http://opml.radiotime.com/Tune.ashx?id=s2602"
+  },
+  "D71F5A51": {
+    "service": "webradio",
+    "uri": "http://http-live.sr.se/p4orebro-mp3-192"
+  },
+  "27B34F51": {
+    "service": "mpd",
+    "uri": "albums://Adele/21"
+  },
+  "57D42E3E": {
+    "service": "mpd",
+    "uri": "albums://Henry%20Jackman/Uncharted%204%3A%20A%20Thief's%20End%20(Original%20Soundtrack)"
+  },
+  "D7FDBB32": {
+    "service": "mpd",
+    "uri": "albums://Avicii/True"
   },
   "70F7ADE9": {
-    "artist": "Justin Timberlake",
-    "album": "Man of the Woods"
-  },
-  "37EC1840": {
-    "artist": "Coldplay",
-    "album": "A Rush of Blood to the Head"
-  },
-  "97EF1D40": {
-    "artist": "David Guetta",
-    "album": "Listen"
+    "service": "mpd",
+    "uri": "albums://Justin%20Timberlake/Man%20of%20the%20Woods"
   },
   "C40F8E53": {
-    "artist": null,
-    "album": "1 Hour of Relaxing Zelda - Breath of the Wild Music"
+    "service": "mpd",
+    "uri": "albums:///1%20Hour%20of%20Relaxing%20Zelda%20-%20Breath%20of%20the%20Wild%20Music"
+  },
+  "37EC1840": {
+    "service": "mpd",
+    "uri": "albums://Coldplay/A%20Rush%20of%20Blood%20to%20the%20Head"
   },
   "878D1E40": {
-    "artist": "Various Artists",
-    "album": "Beethoven: Symphonies #1 & 3"
+    "service": "mpd",
+    "uri": "albums://Anton%20Nanut%3A%20Ljubljana%20Radio%20Symphony%20Orchestra/Beethoven%3A%20Symphonies%20%231%20%26%203"
+  },
+  "97EF1D40": {
+    "service": "mpd",
+    "uri": "albums://David%20Guetta/Listen"
+  },
+  "57EF123E": {
+    "service": "mpd",
+    "title": "Pop",
+    "uri": "playlists/Pop"
+  },
+  "57DA173E": {
+    "service": "mpd",
+    "uri": "albums://Greg%20Edmonson/Uncharted%202%3A%20Among%20Thieves%20(Original%20Soundtrack%20from%20the%20Video%20Game)"
   }
 }
