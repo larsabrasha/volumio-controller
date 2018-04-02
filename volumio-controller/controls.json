@@ -1,7 +1,7 @@
 {
-    "play": "57EF123E",
-    "pause": "57DA173E",
-    "next": "B798B332",
-    "previous": "87253731"
+    "57EF123E": "play",
+    "57DA173E": "pause",
+    "B798B332": "next",
+    "87253731": "previous"
 }
 
