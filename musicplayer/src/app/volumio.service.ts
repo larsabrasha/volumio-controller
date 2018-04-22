@@ -21,6 +21,12 @@ export class VolumioService {
       });
     });
 
+    this.socket.on('pushState', (data) => {
+      this.listeners.forEach(listener => {
+        listener.onPushState(data);
+      });
+    });
+
     this.socket.on('disconnect', () => {
       console.log('disconnect');
     });
@@ -30,9 +36,20 @@ export class VolumioService {
     this.listeners.push(listener);
   }
 
+  getPlayerState() {
+    this.socket.emit('getState');
+  }
+
   getAlbums() {
     this.socket.emit('browseLibrary', {
       uri: 'albums://',
+    });
+  }
+
+  replaceAndPlay(payload: {service: string, uri: string}) {
+    this.socket.emit('replaceAndPlay', {
+      service: payload.service,
+      uri: payload.uri,
     });
   }
 
