@@ -1,33 +1,38 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import * as io from 'socket.io-client';
+
+import { IVolumioServiceListener } from './volumio.service.listener';
 
 @Injectable()
 export class VolumioService {
   socket: any;
+  listeners: IVolumioServiceListener[] = [];
 
   constructor() {
     this.socket = io('http://volumio.local');
 
-    this.socket.on('connect', (data) => {
+    this.socket.on('connect', () => {
       console.log('connect');
-      console.log(data);
     });
 
     this.socket.on('pushBrowseLibrary', (data) => {
-      console.log('pushBrowseLibrary');
-      console.log(data);
+      this.listeners.forEach(listener => {
+        listener.onPushBrowseLibrary(data);
+      });
     });
 
-    this.socket.on('disconnect', (data) => {
+    this.socket.on('disconnect', () => {
       console.log('disconnect');
-      console.log(data);
     });
+  }
+
+  addListener(listener: IVolumioServiceListener) {
+    this.listeners.push(listener);
   }
 
   getAlbums() {
     this.socket.emit('browseLibrary', {
       uri: 'albums://',
-      // uri: 'music-library'
     });
   }
 

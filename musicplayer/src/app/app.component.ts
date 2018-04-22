@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { VolumioService } from './volumio.service';
-import * as io from 'socket.io-client';
+import { Select, Store } from '@ngxs/store';
+import { Observable } from 'rxjs/Observable';
+
+import { AlbumModel, GetAlbums, Play, Stop } from './app.state';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,9 @@ import * as io from 'socket.io-client';
 export class AppComponent implements OnInit {
   title = 'app';
 
-  constructor(private volumioService: VolumioService) {
+  @Select(state => state.music.albums) albums$: Observable<AlbumModel[]>;
+
+  constructor(private store: Store) {
   }
 
   ngOnInit(): void {
@@ -18,15 +22,15 @@ export class AppComponent implements OnInit {
   }
 
   getAlbums() {
-    this.volumioService.getAlbums();
+    this.store.dispatch(new GetAlbums());
   }
 
   play() {
-    this.volumioService.play();
+    this.store.dispatch(new Play());
   }
 
   stop() {
-    this.volumioService.stop();
+    this.store.dispatch(new Stop());
   }
 
 }

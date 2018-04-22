@@ -1,3 +1,9 @@
 <button (click)="getAlbums()">Albums</button>
 <button (click)="play()">Play</button>
 <button (click)="stop()">Stop</button>
+
+<ul>
+  <li *ngFor="let album of albums$ | async">
+    <img src="http://volumio.local{{album.albumart}}" alt="{{album.uri}}" width="200" height="200">
+  </li>
+</ul>
