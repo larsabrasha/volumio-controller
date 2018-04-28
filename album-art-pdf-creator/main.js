@@ -28,7 +28,7 @@ if (process.argv.length <= 2) {
 var directory = process.argv[2];
 console.log('Searching for album art in directory: ' + directory);
 
-var outputFile = process.argv.length >= 3 ? process.argv[3] : "albums.pdf";
+var outputFile = process.argv.length >= 4 ? process.argv[3] : "albums.pdf";
 
 var files = find.fileSync(/cover.(jpg|png)$/, directory);
 if (files) {
