@@ -1,4 +1,16 @@
 {
+  "34742950": {
+    "service": "mpd",
+    "uri": "albums://Pentatonix/PTX%2C%20Vol.%201"
+  },
+  "74316650": {
+    "service": "mpd",
+    "uri": "albums://Movits!/Ut%20ur%20min%20skalle"
+  },
+  "74886450": {
+    "service": "mpd",
+    "uri": "albums://Koinonia/Frontline"
+  },
   "27FBF551": {
     "service": "webradio",
     "uri": "http://http-live.sr.se/p3-mp3-192"
@@ -9,7 +21,7 @@
   },
   "27B34F51": {
     "service": "mpd",
-    "uri": "albums://Adele/21"
+    "uri": "albums://Nigel%20Kennedy%20%26%20The%20Kroke%20Band/East%20Meets%20East"
   },
   "57D42E3E": {
     "service": "mpd",
@@ -47,5 +59,129 @@
   "57DA173E": {
     "service": "mpd",
     "uri": "albums://Greg%20Edmonson/Uncharted%202%3A%20Among%20Thieves%20(Original%20Soundtrack%20from%20the%20Video%20Game)"
+  },
+  "E73B6F51": {
+    "service": "mpd",
+    "uri": "albums://Dream%20Theater/Scenes%20From%20a%20Memory"
+  },
+  "E75EB532": {
+    "service": "mpd",
+    "uri": "albums://The%20Real%20Group/Original"
+  },
+  "9700DE51": {
+    "service": "mpd",
+    "uri": "albums://Robbie%20Williams%20%26%20Gary%20Barlow/In%20and%20Out%20of%20Consciousness%3A%20Greatest%20Hits%201990-2010"
+  },
+  "7752F551": {
+    "service": "mpd",
+    "uri": "albums://David%20Guetta/If%20We%20Ever%20(feat.%20Makeba)%20-%20Single"
+  },
+  "C7A83E31": {
+    "service": "mpd",
+    "uri": "albums://Toto/Falling%20in%20Between"
+  },
+  "9798F951": {
+    "service": "mpd",
+    "uri": "albums://Toto/Hold%20the%20Line%3A%20the%20Very%20Best%20of%20Toto"
+  },
+  "47EC7551": {
+    "service": "mpd",
+    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20III"
+  },
+  "F73D7D51": {
+    "service": "mpd",
+    "uri": "albums://Eminem/Curtain%20Call%3A%20The%20Hits"
+  },
+  "E74DA051": {
+    "service": "mpd",
+    "uri": "albums://Swedish%20House%20Mafia/Until%20Now"
+  },
+  "77BB0F40": {
+    "service": "mpd",
+    "uri": "albums://Dirty%20Loops/Loopified"
+  },
+  "D4278F50": {
+    "service": "mpd",
+    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)"
+  },
+  "44BC8750": {
+    "service": "mpd",
+    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20II"
+  },
+  "94755E50": {
+    "service": "mpd",
+    "uri": "albums://Robbie%20Williams/Swing%20When%20You're%20Winning"
+  },
+  "349643F9": {
+    "service": "mpd",
+    "uri": "albums://Avicii/Stories"
+  },
+  "B4E40A50": {
+    "service": "mpd",
+    "uri": "albums://Ylvis/Volume%201"
+  },
+  "F4287E50": {
+    "service": "mpd",
+    "uri": "albums://Coldplay/X%26Y"
+  },
+  "344A1150": {
+    "service": "mpd",
+    "uri": "albums://Coldplay/Mylo%20Xyloto"
+  },
+  "2F3D69D9": {
+    "service": "mpd",
+    "uri": "albums://Coldplay/Ghost%20Stories"
+  },
+  "C4975B50": {
+    "service": "mpd",
+    "uri": "albums://Lady%20Gaga/Boys%20Boys%20Boys%20(Manhattan%20Clique)%20-%20Single"
+  },
+  "D4010850": {
+    "service": "mpd",
+    "uri": "albums://Gorillaz/Demon%20Days"
+  },
+  "B76EFC3F": {
+    "service": "mpd",
+    "uri": "albums://Coldplay/Viva%20la%20Vida%20or%20Death%20and%20All%20His%20Friends"
+  },
+  "34EB5450": {
+    "service": "mpd",
+    "uri": "albums://Dream%20Theater/Train%20Of%20Thought"
+  },
+  "64A08250": {
+    "service": "mpd",
+    "uri": "albums://Coldplay/Paradise%20-%20Single"
+  },
+  "041D5650": {
+    "service": "mpd",
+    "uri": "albums://Metallica/Metallica"
+  },
+  "37DDFC3F": {
+    "service": "mpd",
+    "uri": "albums://Earthsuit/Kaleidoscope%20Superior"
+  },
+  "C4B38D50": {
+    "service": "mpd",
+    "uri": "albums://Coldplay/Ghost%20Stories"
+  },
+  "54BD6550": {
+    "service": "mpd",
+    "uri": "albums://Movits!/%C3%84ppelknyckarjazz"
+  },
+  "A7FB0940": {
+    "service": "mpd",
+    "uri": "albums://Laleh/Sjung"
+  },
+  "D4EB5450": {
+    "service": "mpd",
+    "uri": "albums://Laleh/Colors"
+  },
+  "74B13550": {
+    "service": "mpd",
+    "uri": "albums://Salem%20Al%20Fakir/This%20Is%20Who%20I%20Am"
+  },
+  "E49B5250": {
+    "service": "mpd",
+    "uri": "albums://Salem%20Al%20Fakir/Astronaut"
   }
 }
