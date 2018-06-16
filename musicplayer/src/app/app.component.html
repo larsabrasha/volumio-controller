@@ -3,13 +3,10 @@
 
 <div>PlayerState: {{(playerState$ | async)?.status}}</div>
 
-<div class="container-fluid--">
-  <div class="row no-gutters">
-    <div class="col-3" *ngFor="let album of albums$ | async">
-      <a href="" (click)="playAlbum(album); $event.preventDefault();">
-        <img src="http://volumio.local{{album.albumart}}" alt="{{album.uri}}" width="200" height="200">
-      </a>
-    </div>
+<div class="d-flex flex-wrap">
+  <div *ngFor="let album of albums$ | async">
+    <a href="" (click)="playAlbum(album); $event.preventDefault();" title="{{album.artist}} - {{album.name}}">
+      <img src="http://volumio.local{{album.albumart}}" alt="{{album.artist}} - {{album.name}}" width="200" height="200">
+    </a>
   </div>
 </div>
-

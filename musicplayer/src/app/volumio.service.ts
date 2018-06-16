@@ -15,13 +15,13 @@ export class VolumioService {
       console.log('connect');
     });
 
-    this.socket.on('pushBrowseLibrary', (data) => {
+    this.socket.on('pushBrowseLibrary', data => {
       this.listeners.forEach(listener => {
         listener.onPushBrowseLibrary(data);
       });
     });
 
-    this.socket.on('pushState', (data) => {
+    this.socket.on('pushState', data => {
       this.listeners.forEach(listener => {
         listener.onPushState(data);
       });
@@ -46,7 +46,7 @@ export class VolumioService {
     });
   }
 
-  replaceAndPlay(payload: {service: string, uri: string}) {
+  replaceAndPlay(payload: { service: string; uri: string }) {
     this.socket.emit('replaceAndPlay', {
       service: payload.service,
       uri: payload.uri,
@@ -60,5 +60,4 @@ export class VolumioService {
   stop() {
     this.socket.emit('stop');
   }
-
 }
