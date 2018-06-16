@@ -1,16 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
+import { NgxsModule } from '@ngxs/store';
 import { AppComponent } from './app.component';
+import { AppState } from './app.state';
+import { VolumioService } from './volumio.service';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxsModule.forRoot([
+      AppState
+    ]),
+    NgxsReduxDevtoolsPluginModule.forRoot(),
   ],
-  providers: [],
+  providers: [VolumioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
