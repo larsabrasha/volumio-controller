@@ -1,0 +1,11 @@
+<div *ngIf="(playerState$ | async) as playerState">
+
+  <button class="btn btn-success" (click)="play()">Play</button>
+  <button class="btn btn-danger" (click)="stop()">Stop</button>
+
+  <div>PlayerState: {{playerState.status}}</div>
+
+  <div *ngIf="playerState?.status == 'play'">
+    Playing: {{playerState.artist}} - {{playerState.album}} - {{playerState.title}}
+  </div>
+</div>

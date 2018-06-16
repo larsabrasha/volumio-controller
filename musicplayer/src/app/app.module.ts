@@ -5,9 +5,11 @@ import { NgxsModule } from '@ngxs/store';
 import { AppComponent } from './app.component';
 import { VolumioService } from './volumio.service';
 import { AppState } from './store/player.state';
+import { PlayerstatusComponent } from './playerstatus/playerstatus.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PlayerstatusComponent, AlbumsComponent],
   imports: [
     BrowserModule,
     NgxsModule.forRoot([AppState]),
