@@ -183,5 +183,13 @@
   "E49B5250": {
     "service": "mpd",
     "uri": "albums://Salem%20Al%20Fakir/Astronaut"
+  },
+  "64006ADF": {
+    "service": "mpd",
+    "uri": "albums://Toto/Isolation"
+  },
+  "342961DF": {
+    "service": "mpd",
+    "uri": "albums://Toto/Tambu"
   }
 }

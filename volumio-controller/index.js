@@ -1,6 +1,7 @@
 const SerialPort = require("serialport");
 const Readline = SerialPort.parsers.Readline;
 const io = require("socket.io-client");
+const path = require('path');
 const fs = require("fs");
 
 const controls = require("./controls.json");
@@ -37,7 +38,8 @@ function registerMusic(data) {
 
   var jsonContent = JSON.stringify(music, null, 2);
 
-  fs.writeFile("music.json", jsonContent, "utf8", function(err) {
+  var file = path.join(__dirname, "music.json");
+  fs.writeFile(file, jsonContent, "utf8", function(err) {
     if (err) {
       console.log("An error occured while writing JSON Object to File.");
       return console.log(err);
