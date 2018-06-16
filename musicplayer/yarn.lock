@@ -175,6 +175,10 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angularclass/hmr@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@angularclass/hmr/-/hmr-2.1.3.tgz#34e658ed3da37f23b0a200e2da5a89be92bb209f"
+
 "@ngtools/webpack@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.0.8.tgz#a05bce526aee9da62bb230a95fba83fee99d0bca"
@@ -884,6 +888,10 @@ boom@2.x.x:
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
+
+bootstrap@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -3426,6 +3434,10 @@ jasminewd2@^2.1.0:
 jest-docblock@^21.0.0:
   version "21.2.0"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-21.2.0.tgz#51529c3b30d5fd159da60c27ceedc195faf8d414"
+
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
 js-base64@^2.1.8:
   version "2.4.5"

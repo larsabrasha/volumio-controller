@@ -7,9 +7,15 @@ import { VolumioService } from './volumio.service';
 import { AppState } from './store/player.state';
 import { PlayerstatusComponent } from './playerstatus/playerstatus.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { LibraryComponent } from './library/library.component';
 
 @NgModule({
-  declarations: [AppComponent, PlayerstatusComponent, AlbumsComponent],
+  declarations: [
+    AppComponent,
+    PlayerstatusComponent,
+    AlbumsComponent,
+    LibraryComponent,
+  ],
   imports: [
     BrowserModule,
     NgxsModule.forRoot([AppState]),

@@ -1,7 +1,7 @@
-<div class="d-flex flex-wrap">
-  <div *ngFor="let album of albums$ | async">
+<div class="d-flex justify-content-center flex-wrap m-1">
+  <div *ngFor="let album of albums$ | async" class="m-1">
     <a href="" (click)="playAlbum(album); $event.preventDefault();" title="{{album.artist}} - {{album.name}}">
-      <img src="http://volumio.local{{album.albumart}}" alt="{{album.artist}} - {{album.name}}" width="200" height="200">
+      <img src="http://volumio.local{{album.albumart}}" alt="{{album.artist}} - {{album.name}}" width="200" height="200" class="bg-secondary rounded shadow-sm">
     </a>
   </div>
 </div>

@@ -1,3 +1,11 @@
-<app-playerstatus></app-playerstatus>
-
-<app-albums></app-albums>
+<div class="d-flex flex-row" style="width: 100vw; height: 100vh">
+  <aside class="bg-secondary" style="min-width: 250px">
+    <app-library></app-library>
+  </aside>
+  <main class="bg-dark flex-grow-1" style="overflow-x: hidden; overflow-y: auto;">
+    <app-albums></app-albums>
+  </main>
+  <aside class=" bg-secondary " style="min-width: 250px ">
+    <app-playerstatus></app-playerstatus>
+  </aside>
+</div>
