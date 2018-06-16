@@ -1,0 +1,15 @@
+<button class="btn btn-success waves-light" mdbWavesEffect (click)="play()">Play</button>
+<button class="btn btn-danger waves-light" mdbWavesEffect (click)="stop()">Stop</button>
+
+<div>PlayerState: {{(playerState$ | async)?.status}}</div>
+
+<div class="container-fluid--">
+  <div class="row no-gutters">
+    <div class="col-3" *ngFor="let album of albums$ | async">
+      <a href="" (click)="playAlbum(album); $event.preventDefault();">
+        <img src="http://volumio.local{{album.albumart}}" alt="{{album.uri}}" width="200" height="200">
+      </a>
+    </div>
+  </div>
+</div>
+
