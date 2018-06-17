@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { AlbumModel } from '../store/player.model';
@@ -8,6 +8,7 @@ import { PlayAlbum } from '../store/player.actions';
   selector: 'app-albums',
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AlbumsComponent implements OnInit {
   @Select(state => state.music.albums)

@@ -1,11 +1,12 @@
 <div class="d-flex flex-row" style="width: 100vw; height: 100vh">
-  <aside class="bg-secondary" style="min-width: 250px">
+  <aside class="bg-secondary" style="min-width: 250px; width: 250px; overflow-y: auto;">
     <app-library></app-library>
   </aside>
   <main class="bg-dark flex-grow-1" style="overflow-x: hidden; overflow-y: auto;">
     <app-albums></app-albums>
   </main>
-  <aside class=" bg-secondary " style="min-width: 250px ">
+  <aside class="bg-secondary d-flex flex-column" style="min-width: 250px; width: 250px">
     <app-playerstatus></app-playerstatus>
+    <app-playlist style="overflow-y: auto;"></app-playlist>
   </aside>
 </div>

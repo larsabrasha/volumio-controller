@@ -21,6 +21,12 @@ export class VolumioService {
       });
     });
 
+    this.socket.on('pushQueue', data => {
+      this.listeners.forEach(listener => {
+        listener.onPushQueue(data);
+      });
+    });
+
     this.socket.on('pushState', data => {
       this.listeners.forEach(listener => {
         listener.onPushState(data);
@@ -46,6 +52,10 @@ export class VolumioService {
     });
   }
 
+  getQueue() {
+    this.socket.emit('getQueue');
+  }
+
   replaceAndPlay(payload: { service: string; uri: string }) {
     this.socket.emit('replaceAndPlay', {
       service: payload.service,
@@ -57,7 +67,35 @@ export class VolumioService {
     this.socket.emit('play');
   }
 
+  pause() {
+    this.socket.emit('pause');
+  }
+
   stop() {
     this.socket.emit('stop');
+  }
+
+  previous() {
+    this.socket.emit('prev');
+  }
+
+  next() {
+    this.socket.emit('next');
+  }
+
+  toggleRandom(value: boolean) {
+    this.socket.emit('setRandom', { value });
+  }
+
+  toggleRepeat(value: boolean) {
+    this.socket.emit('setRepeat', { value });
+  }
+
+  playQueueItemAtIndex(index: number) {
+    this.socket.emit('play', { value: index });
+  }
+
+  clearQueue() {
+    this.socket.emit('clearQueue');
   }
 }

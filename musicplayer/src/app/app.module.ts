@@ -8,6 +8,10 @@ import { AppState } from './store/player.state';
 import { PlayerstatusComponent } from './playerstatus/playerstatus.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { LibraryComponent } from './library/library.component';
+import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
+import { environment } from '../environments/environment';
+import { MinuteSecondsPipe } from './minute-seconds.pipe';
+import { PlaylistComponent } from './playlist/playlist.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +19,18 @@ import { LibraryComponent } from './library/library.component';
     PlayerstatusComponent,
     AlbumsComponent,
     LibraryComponent,
+    MinuteSecondsPipe,
+    PlaylistComponent,
   ],
   imports: [
     BrowserModule,
     NgxsModule.forRoot([AppState]),
-    NgxsReduxDevtoolsPluginModule.forRoot(),
+    NgxsReduxDevtoolsPluginModule.forRoot({
+      disabled: environment.production,
+    }),
+    // NgxsLoggerPluginModule.forRoot({
+    //   disabled: environment.production,
+    // }),
   ],
   providers: [VolumioService],
   bootstrap: [AppComponent],

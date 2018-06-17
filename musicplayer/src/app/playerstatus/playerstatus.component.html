@@ -1,11 +1,40 @@
-<div *ngIf="(playerState$ | async) as playerState">
+<div *ngIf="(playerState$ | async) as playerState" class="m-2 text-light">
 
-  <button class="btn btn-success" (click)="play()">Play</button>
-  <button class="btn btn-danger" (click)="stop()">Stop</button>
+  <h5>Spelas nu</h5>
 
-  <div>PlayerState: {{playerState.status}}</div>
+  <div class="text-center">
 
-  <div *ngIf="playerState?.status == 'play'">
-    Playing: {{playerState.artist}} - {{playerState.album}} - {{playerState.title}}
+    <div style="min-height: 250px">
+      <div>
+        <img src="http://volumio.local{{playerState.albumart}}" alt="{{playerState.artist}} - {{playerState.title}}" width="200"
+          height="200" class="bg-secondary rounded shadow-sm">
+      </div>
+      <div class="mt-1">
+        <h6 class="text-truncate">{{playerState.title}}</h6>
+        <h6 class="text-truncate text-dark">{{playerState.artist}} - {{playerState.album}}</h6>
+      </div>
+    </div>
+
+    <div>
+      <button class="btn btn-link p-0 mr-3" (click)="setRandom(!playerState.random)">
+        <i class="material-icons md-light" [ngClass]="{'md-inactive': playerState.random == false, 'text-dark bg-light rounded': playerState.random == true}">shuffle</i>
+      </button>
+      <button class="btn btn-link p-0 mx-1" (click)="previous()">
+        <i class="material-icons md-light">fast_rewind</i>
+      </button>
+      <button class="btn btn-link p-0 mx-2" *ngIf="playerState.status == 'play'" (click)="pause()">
+        <i class="material-icons md-48 md-light">pause_circle_filled</i>
+      </button>
+      <button class="btn btn-link p-0 mx-2" *ngIf="playerState.status != 'play'" (click)="play()">
+        <i class="material-icons md-48 md-light">play_circle_filled</i>
+      </button>
+      <button class="btn btn-link p-0 mx-1" (click)="next()">
+        <i class="material-icons md-light">fast_forward</i>
+      </button>
+      <button class="btn btn-link p-0 ml-3" (click)="setRepeat(!playerState.repeat)">
+        <i class="material-icons md-light" [ngClass]="{'md-inactive': playerState.repeat == false, 'text-dark bg-light rounded': playerState.repeat == true}">repeat</i>
+      </button>
+    </div>
+
   </div>
 </div>

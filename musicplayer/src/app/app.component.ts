@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private store: Store) {}
 
   ngOnInit(): void {
+    this.store.dispatch(new actions.GetQueue());
     this.store.dispatch(new actions.GetPlayerState());
     this.store.dispatch(new actions.GetAlbums());
   }

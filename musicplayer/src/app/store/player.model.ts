@@ -5,6 +5,19 @@ export interface AlbumModel {
   uri: string;
 }
 
+export interface QueueItem {
+  album: string;
+  albumart: string;
+  artist: string;
+  duration: number;
+  name: string;
+  service: string;
+  trackType: string;
+  tracknumber: number;
+  type: string;
+  uri: string;
+}
+
 export interface PlayerState {
   status: string;
   position: number;
@@ -30,5 +43,6 @@ export interface PlayerState {
 
 export class AppStateModel {
   albums: AlbumModel[];
+  queue: QueueItem[];
   playerState: PlayerState;
 }
