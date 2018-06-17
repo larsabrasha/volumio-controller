@@ -36,5 +36,19 @@
       </button>
     </div>
 
+    <div class="mx-3 mt-1 mb-3 d-flex">
+      <div class="mr-1">
+        <a href="" (click)="mute(); $event.preventDefault();">
+          <i class="material-icons md-light md-inactive md-18">volume_mute</i>
+        </a>
+      </div>
+      <app-slider [value]="playerState.volume" (valueChange)="volumeChange($event)" class="flex-grow-1"></app-slider>
+      <div class="ml-1">
+        <a href="" (click)="fullVolume(); $event.preventDefault();">
+          <i class="material-icons md-light md-inactive md-18">volume_up</i>
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>

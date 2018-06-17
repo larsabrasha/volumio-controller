@@ -9,6 +9,7 @@ import {
   SetRandom,
   SetRepeat,
   Stop,
+  SetVolume,
 } from '../store/player.actions';
 import { PlayerState } from '../store/player.model';
 
@@ -52,5 +53,17 @@ export class PlayerstatusComponent implements OnInit {
 
   setRepeat(value: boolean) {
     this.store.dispatch(new SetRepeat(value));
+  }
+
+  volumeChange(value) {
+    this.store.dispatch(new SetVolume(value));
+  }
+
+  mute() {
+    this.store.dispatch(new SetVolume(0));
+  }
+
+  fullVolume() {
+    this.store.dispatch(new SetVolume(100));
   }
 }

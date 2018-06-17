@@ -46,13 +46,18 @@ export class Next {
 }
 
 export class SetRandom {
-  static readonly type = 'ToggleRandom';
+  static readonly type = 'Set Random';
   constructor(public payload: boolean) {}
 }
 
 export class SetRepeat {
-  static readonly type = 'ToggleRepeat';
+  static readonly type = 'Set Repeat';
   constructor(public payload: boolean) {}
+}
+
+export class SetVolume {
+  static readonly type = 'Set Volume';
+  constructor(public payload: number) {}
 }
 
 export class PlayQueueItemAtIndex {

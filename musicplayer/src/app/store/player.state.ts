@@ -121,10 +121,7 @@ export class AppState implements IVolumioServiceListener {
   }
 
   @Action(actions.SetRandom)
-  toggleRandom(
-    context: StateContext<AppStateModel>,
-    action: actions.SetRandom
-  ) {
+  setRandom(context: StateContext<AppStateModel>, action: actions.SetRandom) {
     const state = context.getState();
     context.patchState({
       playerState: {
@@ -132,14 +129,11 @@ export class AppState implements IVolumioServiceListener {
         random: action.payload,
       },
     });
-    this.volumioService.toggleRandom(action.payload);
+    this.volumioService.setRandom(action.payload);
   }
 
   @Action(actions.SetRepeat)
-  toggleRepeat(
-    context: StateContext<AppStateModel>,
-    action: actions.SetRepeat
-  ) {
+  setRepeat(context: StateContext<AppStateModel>, action: actions.SetRepeat) {
     const state = context.getState();
     context.patchState({
       playerState: {
@@ -147,7 +141,19 @@ export class AppState implements IVolumioServiceListener {
         repeat: action.payload,
       },
     });
-    this.volumioService.toggleRepeat(action.payload);
+    this.volumioService.setRepeat(action.payload);
+  }
+
+  @Action(actions.SetVolume)
+  setVolume(context: StateContext<AppStateModel>, action: actions.SetVolume) {
+    const state = context.getState();
+    context.patchState({
+      playerState: {
+        ...state.playerState,
+        volume: action.payload,
+      },
+    });
+    this.volumioService.setVolume(action.payload);
   }
 
   @Action(actions.PlayAlbum)

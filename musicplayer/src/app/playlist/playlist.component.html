@@ -1,24 +1,26 @@
 <div *ngIf="(playerState$ | async) as playerState" class="pb-2 text-light">
   <div>
-  <div *ngIf="queue$ | async as queue">
-    <div *ngFor="let item of queue; index as i" class="my-1">
-      <a href="" (click)="playQueueItemAtIndex(i); $event.preventDefault();" class="flex-grow-1 text-light d-flex pl-1 pr-2" style="overflow: hidden">
-        <div>
-          <i class="material-icons md-18" [ngStyle]="{'visibility': item.uri == playerState.uri ? 'visible' : 'hidden'}">
-            {{playerState.status == 'play' ? 'volume_up' : 'volume_mute'}}
-          </i>
-        </div>
-        <div class="ml-1">
-          <img src="http://volumio.local{{item.albumart}}" alt="{{item.artist}} - {{item.title}}" width="24" height="24" class="bg-secondary rounded shadow-sm">
-        </div>
-        <div class="ml-1 flex-grow-1 text-truncate">{{item.name}}</div>
-        <div class="ml-1 text-dark text-right">{{item.duration | minuteSeconds}}</div>
-      </a>
+    <div *ngIf="queue$ | async as queue">
+      <div *ngFor="let item of queue; index as i" class="my-1">
+        <a href="" (click)="playQueueItemAtIndex(i); $event.preventDefault();" class="flex-grow-1 text-light d-flex pl-1 pr-2" style="overflow: hidden"
+          title="{{item.name}}">
+          <div>
+            <i class="material-icons md-18" [ngStyle]="{'visibility': item.uri == playerState.uri ? 'visible' : 'hidden'}">
+              {{playerState.status == 'play' ? 'volume_up' : 'volume_mute'}}
+            </i>
+          </div>
+          <div class="ml-1">
+            <img src="http://volumio.local{{item.albumart}}" alt="{{item.artist}} - {{item.title}}" width="24" height="24" class="bg-secondary rounded shadow-sm">
+          </div>
+          <div class="ml-1 flex-grow-1 text-truncate">{{item.name}}</div>
+          <div class="ml-1 text-dark text-right">{{item.duration | minuteSeconds}}</div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="drodown m-2">
-      <a href="" class="text-dark float-right rounded" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false"><i class="material-icons">more_horiz</i></a>
+    <div class="drodown m-2">
+      <a href="" class="text-dark float-right rounded" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="material-icons">more_horiz</i>
+      </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="" (click)="clearQueue(); $event.preventDefault();">Rensa</a>
       </div>

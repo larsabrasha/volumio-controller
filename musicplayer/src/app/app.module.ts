@@ -12,6 +12,7 @@ import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { environment } from '../environments/environment';
 import { MinuteSecondsPipe } from './minute-seconds.pipe';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PlaylistComponent } from './playlist/playlist.component';
     LibraryComponent,
     MinuteSecondsPipe,
     PlaylistComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,

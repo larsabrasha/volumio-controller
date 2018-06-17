@@ -83,12 +83,16 @@ export class VolumioService {
     this.socket.emit('next');
   }
 
-  toggleRandom(value: boolean) {
+  setRandom(value: boolean) {
     this.socket.emit('setRandom', { value });
   }
 
-  toggleRepeat(value: boolean) {
+  setRepeat(value: boolean) {
     this.socket.emit('setRepeat', { value });
+  }
+
+  setVolume(value: number) {
+    this.socket.emit('volume', value);
   }
 
   playQueueItemAtIndex(index: number) {
