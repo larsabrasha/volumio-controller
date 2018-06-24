@@ -5,7 +5,7 @@
         <a href="" (click)="playQueueItemAtIndex(i); $event.preventDefault();" class="flex-grow-1 text-light d-flex pl-1 pr-2" style="overflow: hidden"
           title="{{item.name}}">
           <div style="width:18px">
-            <i class="material-icons md-18" [ngStyle]="{'visibility': item.uri == playerState.uri ? 'visible' : 'hidden'}">
+            <i class="material-icons md-18" [ngStyle]="{'visibility': i == playerState.position ? 'visible' : 'hidden'}">
               {{playerState.status == 'play' ? 'volume_up' : 'volume_mute'}}
             </i>
           </div>
