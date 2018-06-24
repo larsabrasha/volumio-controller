@@ -52,6 +52,12 @@ export class VolumioService {
     });
   }
 
+  getGenres() {
+    this.socket.emit('browseLibrary', {
+      uri: 'genres://',
+    });
+  }
+
   getQueue() {
     this.socket.emit('getQueue');
   }
@@ -109,5 +115,9 @@ export class VolumioService {
 
   clearQueue() {
     this.socket.emit('clearQueue');
+  }
+
+  loadGenre(genre: string) {
+    this.socket.emit('browseLibrary', { uri: 'genres://' + genre });
   }
 }

@@ -199,6 +199,12 @@
   dependencies:
     tslib "^1.9.0"
 
+"@ngxs/router-plugin@^3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@ngxs/router-plugin/-/router-plugin-3.1.4.tgz#39044393be3927b2f42cbc56f35d5241e623d077"
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngxs/store@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.1.4.tgz#dd90d00a3dc10f470a24362dc60ab0ec6c1f00ad"

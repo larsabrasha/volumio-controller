@@ -1,7 +1,13 @@
 export interface AlbumModel {
+  title: string;
   albumart: string;
   name: string;
   artist: string;
+  uri: string;
+}
+
+export interface GenreModel {
+  title: string;
   uri: string;
 }
 
@@ -43,6 +49,8 @@ export interface PlayerState {
 
 export class AppStateModel {
   albums: AlbumModel[];
+  genres: GenreModel[];
+  genreAlbums: AlbumModel[];
   queue: QueueItem[];
   playerState: PlayerState;
 }

@@ -2,7 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { AlbumModel } from '../store/player.model';
-import { PlayAlbum } from '../store/player.actions';
+import { PlayAlbum, GetAlbums } from '../store/player.actions';
 
 @Component({
   selector: 'app-albums',
@@ -14,7 +14,9 @@ export class AlbumsComponent implements OnInit {
   @Select(state => state.music.albums)
   albums$: Observable<AlbumModel[]>;
 
-  constructor(private store: Store) {}
+  constructor(private store: Store) {
+    this.store.dispatch(new GetAlbums());
+  }
 
   ngOnInit() {}
 

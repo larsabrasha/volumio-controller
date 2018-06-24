@@ -6,12 +6,16 @@ export class GetAlbums {
   static readonly type = 'Get Albums';
 }
 
+export class GetGenres {
+  static readonly type = 'Get Genres';
+}
+
 export class GetQueue {
   static readonly type = 'Get Queue';
 }
 
-export class GetAlbumsSuccess {
-  static readonly type = 'Get Albums Success';
+export class PushBrowseLibrary {
+  static readonly type = 'Push Browse Library';
   constructor(public payload: any) {}
 }
 
@@ -84,4 +88,9 @@ export class ClearQueue {
 export class PlayAlbum {
   static readonly type = 'Play Album';
   constructor(public payload: { service: string; uri: string }) {}
+}
+
+export class LoadGenre {
+  static readonly type = 'Load Genre';
+  constructor(public payload: string) {}
 }

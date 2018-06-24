@@ -4,11 +4,14 @@ import { VolumioService } from './../volumio.service';
 import { IVolumioServiceListener } from './../volumio.service.listener';
 import * as actions from './player.actions';
 import { AppStateModel } from './player.model';
+import { RouterNavigation } from '@ngxs/router-plugin';
 
 @State<AppStateModel>({
   name: 'music',
   defaults: {
     albums: [],
+    genres: [],
+    genreAlbums: [],
     queue: [],
     playerState: null,
   },
@@ -19,7 +22,8 @@ export class AppState implements IVolumioServiceListener {
   }
 
   onPushBrowseLibrary(data: any) {
-    this.store.dispatch(new actions.GetAlbumsSuccess(data));
+    console.log('onPushBrowseLibrary');
+    this.store.dispatch(new actions.PushBrowseLibrary(data));
   }
 
   onPushQueue(data: any) {
@@ -29,6 +33,12 @@ export class AppState implements IVolumioServiceListener {
   onPushState(data: any) {
     this.store.dispatch(new actions.PushState(data));
   }
+
+  @Action(RouterNavigation)
+  routerNavigation(
+    { getState, setState }: StateContext<AppStateModel>,
+    { payload }
+  ) {}
 
   @Action(actions.GetPlayerState)
   getPlayerState() {
@@ -40,23 +50,48 @@ export class AppState implements IVolumioServiceListener {
     this.volumioService.getAlbums();
   }
 
+  @Action(actions.GetGenres)
+  getGenres() {
+    this.volumioService.getGenres();
+  }
+
   @Action(actions.GetQueue)
   getQueue() {
     this.volumioService.getQueue();
   }
 
-  @Action(actions.GetAlbumsSuccess)
-  getAlbumsSuccess(
+  @Action(actions.PushBrowseLibrary)
+  pushBrowseLibrary(
     { getState, setState }: StateContext<AppStateModel>,
     { payload }
   ) {
     const state = getState();
-    state.albums = payload.navigation.lists[0].items.map(item => ({
-      albumart: item.albumart,
-      uri: item.uri,
-      artist: item.artist,
-      name: item.title,
-    }));
+
+    if (payload.navigation.lists.length === 3) {
+      const items = payload.navigation.lists[1].items.map(item => ({
+        title: item.title,
+        albumart: item.albumart,
+        name: item.name,
+        artist: item.artist,
+        uri: item.uri,
+      }));
+      state.genreAlbums = items;
+    } else {
+      const items = payload.navigation.lists[0].items.map(item => ({
+        title: item.title,
+        albumart: item.albumart,
+        name: item.name,
+        artist: item.artist,
+        uri: item.uri,
+      }));
+
+      if ((items[0].uri as string).startsWith('genres')) {
+        state.genres = items;
+      } else if ((items[0].uri as string).startsWith('albums')) {
+        state.albums = items;
+      }
+    }
+
     setState(state);
   }
 
@@ -205,5 +240,10 @@ export class AppState implements IVolumioServiceListener {
   @Action(actions.ClearQueue)
   clearQueue() {
     this.volumioService.clearQueue();
+  }
+
+  @Action(actions.LoadGenre)
+  loadGenre(context: StateContext<AppStateModel>, action: actions.LoadGenre) {
+    this.volumioService.loadGenre(action.payload);
   }
 }

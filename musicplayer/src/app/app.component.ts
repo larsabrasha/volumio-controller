@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
   constructor(private store: Store, private hotkeysService: HotkeysService) {
     this.store.dispatch(new actions.GetQueue());
     this.store.dispatch(new actions.GetPlayerState());
-    this.store.dispatch(new actions.GetAlbums());
 
     this.addHotKey('space', new PlayPause());
     this.addHotKey('left', new Previous());

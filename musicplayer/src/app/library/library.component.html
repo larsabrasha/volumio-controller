@@ -1,0 +1,22 @@
+<ul class="nav flex-column mt-3">
+  <li class="nav-item">
+    <span class="p-1">Library</span>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a [routerLink]="['/albums/']" class="nav-link text-light">
+          Album
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <span class="p-1">Genres</span>
+    <ul class="nav flex-column">
+      <li *ngFor="let genre of genres$ | async" class="nav-item">
+        <a [routerLink]="['/genres/', genre.title]" class="nav-link text-light">
+          {{genre.title}}
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>
