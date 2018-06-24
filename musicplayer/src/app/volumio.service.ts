@@ -95,6 +95,14 @@ export class VolumioService {
     this.socket.emit('volume', value);
   }
 
+  volumeUp() {
+    this.socket.emit('volume', '+');
+  }
+
+  volumeDown() {
+    this.socket.emit('volume', '-');
+  }
+
   playQueueItemAtIndex(index: number) {
     this.socket.emit('play', { value: index });
   }

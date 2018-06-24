@@ -98,6 +98,26 @@ export class AppState implements IVolumioServiceListener {
     this.volumioService.pause();
   }
 
+  @Action(actions.PlayPause)
+  playPause(context: StateContext<AppStateModel>) {
+    const state = context.getState();
+
+    const nextStatus = state.playerState.status == 'play' ? 'pause' : 'play';
+
+    context.patchState({
+      playerState: {
+        ...state.playerState,
+        status: nextStatus,
+      },
+    });
+
+    if (nextStatus == 'play') {
+      this.volumioService.play();
+    } else {
+      this.volumioService.pause();
+    }
+  }
+
   @Action(actions.Stop)
   stop(context: StateContext<AppStateModel>) {
     const state = context.getState();
@@ -154,6 +174,16 @@ export class AppState implements IVolumioServiceListener {
       },
     });
     this.volumioService.setVolume(action.payload);
+  }
+
+  @Action(actions.VolumeUp)
+  volumeUp() {
+    this.volumioService.volumeUp();
+  }
+
+  @Action(actions.VolumeDown)
+  volumeDown() {
+    this.volumioService.volumeDown();
   }
 
   @Action(actions.PlayAlbum)

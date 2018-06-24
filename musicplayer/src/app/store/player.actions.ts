@@ -33,6 +33,10 @@ export class Pause {
   static readonly type = 'Pause';
 }
 
+export class PlayPause {
+  static readonly type = 'PlayPause';
+}
+
 export class Stop {
   static readonly type = 'Stop';
 }
@@ -58,6 +62,14 @@ export class SetRepeat {
 export class SetVolume {
   static readonly type = 'Set Volume';
   constructor(public payload: number) {}
+}
+
+export class VolumeUp {
+  static readonly type = 'Volume Up';
+}
+
+export class VolumeDown {
+  static readonly type = 'Volume Down';
 }
 
 export class PlayQueueItemAtIndex {

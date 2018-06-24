@@ -4,12 +4,12 @@
       <div *ngFor="let item of queue; index as i" class="my-1">
         <a href="" (click)="playQueueItemAtIndex(i); $event.preventDefault();" class="flex-grow-1 text-light d-flex pl-1 pr-2" style="overflow: hidden"
           title="{{item.name}}">
-          <div>
+          <div style="width:18px">
             <i class="material-icons md-18" [ngStyle]="{'visibility': item.uri == playerState.uri ? 'visible' : 'hidden'}">
               {{playerState.status == 'play' ? 'volume_up' : 'volume_mute'}}
             </i>
           </div>
-          <div class="ml-1">
+          <div class="ml-1" style="width:24px">
             <img src="http://volumio.local{{item.albumart}}" alt="{{item.artist}} - {{item.title}}" width="24" height="24" class="bg-secondary rounded shadow-sm">
           </div>
           <div class="ml-1 flex-grow-1 text-truncate">{{item.name}}</div>

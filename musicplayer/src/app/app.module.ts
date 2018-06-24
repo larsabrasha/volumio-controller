@@ -13,6 +13,7 @@ import { environment } from '../environments/environment';
 import { MinuteSecondsPipe } from './minute-seconds.pipe';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { SliderComponent } from './slider/slider.component';
+import { HotkeyModule } from 'angular2-hotkeys';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SliderComponent } from './slider/slider.component';
   ],
   imports: [
     BrowserModule,
+    HotkeyModule.forRoot(),
     NgxsModule.forRoot([AppState]),
     NgxsReduxDevtoolsPluginModule.forRoot({
       disabled: environment.production,

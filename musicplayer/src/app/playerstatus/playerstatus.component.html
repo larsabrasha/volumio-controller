@@ -22,11 +22,14 @@
       <button class="btn btn-link p-0 mx-1" (click)="previous()">
         <i class="material-icons md-light">fast_rewind</i>
       </button>
-      <button class="btn btn-link p-0 mx-2" *ngIf="playerState.status == 'play'" (click)="pause()">
-        <i class="material-icons md-48 md-light">pause_circle_filled</i>
-      </button>
       <button class="btn btn-link p-0 mx-2" *ngIf="playerState.status != 'play'" (click)="play()">
-        <i class="material-icons md-48 md-light">play_circle_filled</i>
+        <i class="material-icons md-48 md-light">play_arrow</i>
+      </button>
+      <button class="btn btn-link p-0 mx-2" *ngIf="playerState.service == 'mpd' && playerState.status == 'play'" (click)="pause()">
+        <i class="material-icons md-48 md-light">pause</i>
+      </button>
+      <button class="btn btn-link p-0 mx-2" *ngIf="playerState.service == 'webradio' && playerState.status == 'play'" (click)="stop()">
+        <i class="material-icons md-48 md-light">stop</i>
       </button>
       <button class="btn btn-link p-0 mx-1" (click)="next()">
         <i class="material-icons md-light">fast_forward</i>
