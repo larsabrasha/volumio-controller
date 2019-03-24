@@ -14,12 +14,13 @@ sudo node-gyp configure build
 npm install
 ```
 
-2. Register volumio-controller as a service
+2. Register volumio-controller as a service and start it
 ```bash
 sudo cp ~/volumio-controller-service/volumio-controller.service /lib/systemd/system
 sudo chown root:root /lib/systemd/system/volumio-controller.service
 
 sudo systemctl enable volumio-controller.service
+sudo systemctl start volumio-controller.service
 ```
 
 3. Enable volumio-controller when RFID-reader via USB is connected
