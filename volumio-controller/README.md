@@ -1,4 +1,4 @@
-1. Install serialport for Raspberry Pi
+0. Install serialport for Raspberry Pi if needed
 
 ```bash
 sudo apt-get update
@@ -7,6 +7,11 @@ sudo npm install serialport --unsafe-perm --build-from-source
 
 cd node_modules/serialport
 sudo node-gyp configure build
+```
+
+1. Install packages
+```bash
+npm install
 ```
 
 2. Register volumio-controller as a service
