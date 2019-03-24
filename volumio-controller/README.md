@@ -1,6 +1,7 @@
 1. Install serialport for Raspberry Pi
 
 ```bash
+sudo apt-get update
 sudo apt-get install -y build-essential
 sudo npm install serialport --unsafe-perm --build-from-source
 
