@@ -1,7 +1,19 @@
 {
+  "14728453": {
+    "service": "mpd",
+    "uri": "albums://Steven%20Curtis%20Chapman/Signs%20of%20Life"
+  },
+  "24166653": {
+    "service": "mpd",
+    "uri": "albums://David%20Phelps/David%20Phelps"
+  },
   "34742950": {
     "service": "mpd",
     "uri": "albums://Pentatonix/PTX%2C%20Vol.%201"
+  },
+  "64256353": {
+    "service": "mpd",
+    "uri": "albums://P.O.D./Satellite"
   },
   "74316650": {
     "service": "mpd",
@@ -184,12 +196,188 @@
     "service": "mpd",
     "uri": "albums://Salem%20Al%20Fakir/Astronaut"
   },
+  "342961DF": {
+    "service": "mpd",
+    "uri": "albums://Toto/Isolation"
+  },
   "64006ADF": {
     "service": "mpd",
     "uri": "albums://Toto/Isolation"
   },
-  "342961DF": {
+  "D4766B53": {
     "service": "mpd",
-    "uri": "albums://Toto/Tambu"
+    "uri": "albums://David%20Phelps/Revelation"
+  },
+  "D735DE3F": {
+    "service": "mpd",
+    "uri": "albums://Amy%20MacDonald/This%20Is%20The%20Life"
+  },
+  "A7CED83F": {
+    "service": "mpd",
+    "uri": "albums://Amy%20Macdonald/A%20Curious%20Thing"
+  },
+  "144C6C53": {
+    "service": "mpd",
+    "uri": "albums://Beyonc%C3%A9/BEYONC%C3%89"
+  },
+  "77D0EA3F": {
+    "service": "mpd",
+    "uri": "albums://Beyonc%C3%A9/I%20Am...Sasha%20Fierce%20(Platinum%20Edition%20-%20Audio%20Version)"
+  },
+  "54CC8753": {
+    "service": "mpd",
+    "uri": "albums://Carola/St%C3%B6rst%20av%20allt"
+  },
+  "347A6653": {
+    "service": "mpd",
+    "uri": "albums://Elvis%20Presley/That's%20the%20Way%20It%20Is"
+  },
+  "A4C27753": {
+    "service": "mpd",
+    "uri": "albums://Erik%20Tilling/Hopp"
+  },
+  "D7D8B43F": {
+    "service": "mpd",
+    "uri": "albums://Erik%20Tilling/I%20din%20hand%20ligger%20mina%20dagar"
+  },
+  "B73AF83F": {
+    "service": "mpd",
+    "uri": "albums://Greg%20Edmonson/Uncharted%3A%20Drake's%20Fortune%20(Original%20Soundtrack%20from%20the%20Video%20Game)"
+  },
+  "A4D69253": {
+    "service": "mpd",
+    "uri": "albums://Greg%20Edmonson/Uncharted%E2%84%A2%203%3A%20Drake's%20Deception%20(Original%20Soundtrack)"
+  },
+  "771C1E40": {
+    "service": "mpd",
+    "uri": "albums://Henry%20Jackman/Uncharted%3A%20The%20Lost%20Legacy%20(Original%20Game%20Soundtrack)"
+  },
+  "970AE33F": {
+    "service": "mpd",
+    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Fellowship%20of%20the%20Ring"
+  },
+  "E4FB5153": {
+    "service": "mpd",
+    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Return%20of%20the%20King"
+  },
+  "04E17E53": {
+    "service": "mpd",
+    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Two%20Towers"
+  },
+  "D700A63F": {
+    "service": "mpd",
+    "uri": "albums://John%20Williams/Star%20Wars%3A%20The%20Force%20Awakens%20(Original%20Motion%20Picture%20Soundtrack)"
+  },
+  "37F7BF3F": {
+    "service": "mpd",
+    "uri": "albums://Jonathan%20Johansson/Klagomuren"
+  },
+  "1746AB3F": {
+    "service": "mpd",
+    "uri": "albums://Madonna/Confessions%20on%20a%20Dance%20Floor"
+  },
+  "D41B5C53": {
+    "service": "mpd",
+    "uri": "albums://Mats%20Norrefalk%20%26%20Ulf%20Samuelsson/Incontro"
+  },
+  "67F90340": {
+    "service": "mpd",
+    "uri": "albums://Michael%20W.%20Smith/Change%20Your%20World"
+  },
+  "D784E53F": {
+    "service": "mpd",
+    "uri": "albums://Michael%20W.%20Smith/Go%20West%20Young%20Man"
+  },
+  "D4F15D53": {
+    "service": "mpd",
+    "uri": "albums://English%20Chamber%20Orchestra%2C%20Jeffrey%20Tate%20%26%20Nigel%20Kennedy/Inner%20Thoughts"
+  },
+  "A4BF6553": {
+    "service": "mpd",
+    "uri": "albums://Nigel%20Kennedy/Kreisler"
+  },
+  "D72AFD3F": {
+    "service": "mpd",
+    "uri": "albums://Nigel%20Kennedy/Vivaldi%20The%20Four%20Seasons"
+  },
+  "B735A33F": {
+    "service": "mpd",
+    "uri": "albums://Per-Erik%20Hallin/Morgonluft"
+  },
+  "A4817B53": {
+    "service": "mpd",
+    "uri": "albums://Robyn/Don't%20Stop%20the%20Music"
+  },
+  "F764CB3F": {
+    "service": "mpd",
+    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock"
+  },
+  "C7DEB03F": {
+    "service": "mpd",
+    "uri": "albums://Robert%20Wells/Rhapsody%20In%20Rock%20-%20Part%20Two"
+  },
+  "57CAED3F": {
+    "service": "mpd",
+    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock%20III"
+  },
+  "C7ADAA3F": {
+    "service": "mpd",
+    "uri": "albums://Steven%20Curtis%20Chapman/Declaration"
+  },
+  "F47D7853": {
+    "service": "mpd",
+    "uri": "albums://Steven%20Curtis%20Chapman/This%20Moment%20(Bonus%20Track%20Version)"
+  },
+  "A4B95253": {
+    "service": "mpd",
+    "uri": "albums://The%20Corrs/Unplugged"
+  },
+  "E736A63F": {
+    "service": "mpd",
+    "uri": "albums://The%20Pussycat%20Dolls/PCD"
+  },
+  "674EAE3F": {
+    "service": "mpd",
+    "uri": "albums://Toto/Fahrenheit"
+  },
+  "67C12240": {
+    "service": "mpd",
+    "uri": "albums://Toto/Toto%20XIV"
+  },
+  "B46D6E53": {
+    "service": "mpd",
+    "uri": "albums://Agnetha%20F%C3%A4ltskog/A"
+  },
+  "1784B83F": {
+    "service": "mpd",
+    "uri": "albums://Benny%20Andersson/Piano"
+  },
+  "A714CC3F": {
+    "service": "mpd",
+    "uri": "albums://Hillsong/Blessed"
+  },
+  "04465153": {
+    "service": "mpd",
+    "uri": "albums://Majoy/Give%20Love"
+  },
+  "374EED3F": {
+    "service": "mpd",
+    "uri": "albums://The%20Beatles/1"
+  },
+  "643F5953": {
+    "service": "mpd",
+    "uri": "albums://The%20Ark/The%20Ark%2C%20Arkeology%20-%20The%20Complete%20Singles%20Collection"
+  },
+  "C7841F40": {
+    "service": "mpd",
+    "uri": "albums://Tower%20Of%20Power/Soul%20Vaccination%20Live%20%5BBonus%20Track%5D"
+  },
+  "E74CC43F": {
+    "service": "mpd",
+    "uri": "albums://Joybells/Having%20Church"
+  },
+  "17F8AF3F": {
+    "service": "mpd",
+    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)"
   }
 }
