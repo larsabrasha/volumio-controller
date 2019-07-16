@@ -115,7 +115,7 @@ parser.on("data", data => {
   } else if (musicItem) {
     console.log(musicItem);
     socket.emit("replaceAndPlay", musicItem);
-  } else {
+  } else if (currentState.status === "play") {
     registerMusic(data);
   }
 });

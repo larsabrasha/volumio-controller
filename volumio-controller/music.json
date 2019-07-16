@@ -23,6 +23,14 @@
     "service": "mpd",
     "uri": "albums://Koinonia/Frontline"
   },
+  "44F517DF": {
+    "service": "webradio",
+    "uri": "http://http-live.sr.se/p1-mp3-192"
+  },
+  "342961DF": {
+    "service": "webradio",
+    "uri": "http://http-live.sr.se/p2-mp3-192"
+  },
   "27FBF551": {
     "service": "webradio",
     "uri": "http://http-live.sr.se/p3-mp3-192"
@@ -55,18 +63,9 @@
     "service": "mpd",
     "uri": "albums://Coldplay/A%20Rush%20of%20Blood%20to%20the%20Head"
   },
-  "878D1E40": {
-    "service": "mpd",
-    "uri": "albums://Anton%20Nanut%3A%20Ljubljana%20Radio%20Symphony%20Orchestra/Beethoven%3A%20Symphonies%20%231%20%26%203"
-  },
   "97EF1D40": {
     "service": "mpd",
     "uri": "albums://David%20Guetta/Listen"
-  },
-  "57EF123E": {
-    "service": "mpd",
-    "title": "Pop",
-    "uri": "playlists/Pop"
   },
   "57DA173E": {
     "service": "mpd",
@@ -195,14 +194,6 @@
   "E49B5250": {
     "service": "mpd",
     "uri": "albums://Salem%20Al%20Fakir/Astronaut"
-  },
-  "342961DF": {
-    "service": "mpd",
-    "uri": "albums://Toto/Isolation"
-  },
-  "64006ADF": {
-    "service": "mpd",
-    "uri": "albums://Toto/Isolation"
   },
   "D4766B53": {
     "service": "mpd",
@@ -379,5 +370,29 @@
   "17F8AF3F": {
     "service": "mpd",
     "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)"
+  },
+  "878D1E40": {
+    "service": "mpd",
+    "uri": "albums://Stevie%20Wonder/Stevie%20Wonder%3A%20The%20Definitive%20Collection"
+  },
+  "54D33A2D": {
+    "service": "mpd",
+    "uri": "albums://Melody%20Gardot/My%20One%20and%20Only%20Thrill"
+  },
+  "84A12B2D": {
+    "service": "mpd",
+    "uri": "albums://Melody%20Gardot/The%20Absence"
+  },
+  "141695DF": {
+    "service": "mpd",
+    "uri": "albums://Steven%20Curtis%20Chapman/Speechless"
+  },
+  "57EF123E": {
+    "service": "mpd",
+    "uri": "albums://Per-Erik%20Hallin/Better%20Late%20Than%20Never"
+  },
+  "64006ADF": {
+    "service": "mpd",
+    "uri": "albums:///Super%20Mario%20Odyssey%20-%20Soundtrack"
   }
 }
