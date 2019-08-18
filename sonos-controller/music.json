@@ -2,7 +2,7 @@
   "14728453": {
     "service": "mpd",
     "uri": "albums://Steven%20Curtis%20Chapman/Signs%20of%20Life",
-    "AppleMusicAlbumId": "724855958"
+    "sonos-apple-music-album-id": "724855958"
   },
   "24166653": {
     "service": "mpd",
@@ -26,19 +26,23 @@
   },
   "44F517DF": {
     "service": "webradio",
-    "uri": "http://http-live.sr.se/p1-mp3-192"
+    "uri": "http://http-live.sr.se/p1-mp3-192",
+    "sonos-favorite": "P1"
   },
   "342961DF": {
     "service": "webradio",
-    "uri": "http://http-live.sr.se/p2-mp3-192"
+    "uri": "http://http-live.sr.se/p2-mp3-192",
+    "sonos-favorite": "P2"
   },
   "27FBF551": {
     "service": "webradio",
-    "uri": "http://http-live.sr.se/p3-mp3-192"
+    "uri": "http://http-live.sr.se/p3-mp3-192",
+    "sonos-favorite": "P3"
   },
   "D71F5A51": {
     "service": "webradio",
-    "uri": "http://http-live.sr.se/p4orebro-mp3-192"
+    "uri": "http://http-live.sr.se/p4orebro-mp3-192",
+    "sonos-favorite": "P4 Örebro"
   },
   "27B34F51": {
     "service": "mpd",

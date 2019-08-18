@@ -2,7 +2,7 @@ const SerialPort = require("serialport");
 const Readline = SerialPort.parsers.Readline;
 const path = require("path");
 const fs = require("fs");
-const http = require("http");
+const fetch = require("node-fetch");
 
 const controls = require("./controls.json");
 const music = require("./music.json");
@@ -10,16 +10,16 @@ const music = require("./music.json");
 const serialPort = process.env.SERIAL_PORT || "/dev/ttyACM0"; // "/dev/tty.usbmodem1431" on my Mac
 const baseUrl = process.env.BASE_URL || "http://localhost:5005"; // http://volumio.local:5005
 
-function get(url) {
-  http.get(url).on("error", err => {
-    console.log("Error: " + err.message);
+function playSonosAppleMusicAlbum(albumId) {
+  fetch(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId).then(_ => {
+    fetch(baseUrl + "/Arbetsrum/clearqueue:" + albumId).then(_ => {
+      fetch(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId);
+    });
   });
 }
 
-function playAppleMusicAlbum(albumId) {
-  get(baseUrl + "/Arbetsrum/leave");
-  get(baseUrl + "/Arbetsrum/clearqueue");
-  get(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId);
+function playSonosFavorite(favorite) {
+  fetch(baseUrl + "/Arbetsrum/favorite/" + favorite);
 }
 
 const port = new SerialPort(serialPort, {
@@ -96,8 +96,10 @@ parser.on("data", data => {
     }
   } else if (musicItem) {
     console.log(musicItem);
-    if (musicItem["AppleMusicAlbumId"] != null) {
-      playAppleMusicAlbum(musicItem["AppleMusicAlbumId"]);
+    if (musicItem["sonos-apple-music-album-id"] != null) {
+      playSonosAppleMusicAlbum(musicItem["sonos-apple-music-album-id"]);
+    } else if (musicItem["sonos-favorite"] != null) {
+      playSonosFavorite(musicItem["sonos-favorite"]);
     }
   }
 });
