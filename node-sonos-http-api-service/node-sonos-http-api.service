@@ -7,7 +7,7 @@ ExecStart=/usr/local/bin/node /home/volumio/node-sonos-http-api/server.js
 Restart=always
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=ode-sonos-http-api
+SyslogIdentifier=node-sonos-http-api
 User=volumio
 Group=volumio
 Environment=NODE_ENV=production
