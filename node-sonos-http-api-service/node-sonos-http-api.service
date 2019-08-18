@@ -1,0 +1,16 @@
+[Unit]
+Description = Node Sonos HTTP API
+
+[Service]
+WorkingDirectory=/home/volumio/node-sonos-http-api
+ExecStart=/usr/local/bin/node /home/volumio/node-sonos-http-api/server.js
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=ode-sonos-http-api
+User=volumio
+Group=volumio
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
