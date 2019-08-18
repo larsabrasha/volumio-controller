@@ -1,9 +1,14 @@
+const SerialPort = require("serialport");
+const Readline = SerialPort.parsers.Readline;
 const path = require("path");
 const fs = require("fs");
 const http = require("http");
 
 const controls = require("./controls.json");
 const music = require("./music.json");
+
+const serialPort = process.env.SERIAL_PORT || "/dev/ttyACM0"; // "/dev/tty.usbmodem1431" on my Mac
+const baseUrl = process.env.BASE_URL || "http://localhost:5005"; // http://volumio.local:5005
 
 function get(url) {
   http.get(url).on("error", err => {
@@ -13,12 +18,16 @@ function get(url) {
 
 function playAppleMusicAlbum(albumId) {
   get(baseUrl + "/Arbetsrum/leave");
+  get(baseUrl + "/Arbetsrum/clearqueue");
   get(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId);
 }
 
 const port = new SerialPort(serialPort, {
   baudRate: 9600
 });
+
+var currentState = {};
+var nextAction = null;
 
 port.on("error", function(error) {
   console.log("error: " + error.message);
@@ -87,7 +96,9 @@ parser.on("data", data => {
     }
   } else if (musicItem) {
     console.log(musicItem);
-    playAppleMusicAlbum(musicItem["AppleMusicAlbumId"]);
+    if (musicItem["AppleMusicAlbumId"] != null) {
+      playAppleMusicAlbum(musicItem["AppleMusicAlbumId"]);
+    }
   }
 });
 
@@ -107,5 +118,3 @@ process.on("SIGINT", function() {
   port.disconnect();
   process.exit();
 });
-
-playAppleMusicAlbum(1398353335);

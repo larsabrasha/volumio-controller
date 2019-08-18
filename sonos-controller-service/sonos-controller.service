@@ -2,7 +2,6 @@
 Description = Sonos Controller
 
 [Service]
-WorkingDirectory=/home/volumio/sonos-controller
 ExecStart=/usr/local/bin/node /home/volumio/sonos-controller/index.js
 Restart=always
 StandardOutput=syslog
