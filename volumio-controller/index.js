@@ -1,7 +1,7 @@
 const SerialPort = require("serialport");
 const Readline = SerialPort.parsers.Readline;
 const io = require("socket.io-client");
-const path = require('path');
+const path = require("path");
 const fs = require("fs");
 
 const controls = require("./controls.json");
@@ -13,8 +13,6 @@ const volumioServer = process.env.VOLUMIO_SERVER || "http://localhost:3000"; // 
 const port = new SerialPort(serialPort, {
   baudRate: 9600
 });
-
-
 
 var currentState = {};
 var nextAction = null;
@@ -64,7 +62,6 @@ port.on("disconnected", function(err) {
   process.exit();
 });
 
-
 const parser = port.pipe(new Readline({ delimiter: "\r\n" }));
 
 parser.on("data", data => {
@@ -94,7 +91,10 @@ parser.on("data", data => {
 
     if (controlItem === "playpause") {
       if (currentState.status === "play") {
-        if (currentState.service === "webradio" || currentState.service === "tunein_radio") {
+        if (
+          currentState.service === "webradio" ||
+          currentState.service === "tunein_radio"
+        ) {
           socket.emit("stop");
         } else {
           socket.emit("pause");
@@ -106,7 +106,7 @@ parser.on("data", data => {
       nextAction = "registerMusic";
 
       setTimeout(function() {
-        console.log("stopped register music")
+        console.log("stopped register music");
         nextAction = null;
       }, 5000);
     } else {
@@ -115,11 +115,10 @@ parser.on("data", data => {
   } else if (musicItem) {
     console.log(musicItem);
     socket.emit("replaceAndPlay", musicItem);
+  } else if (currentState.status === "play") {
+    registerMusic(data);
   }
 });
-
-
-
 
 var socket = io.connect(volumioServer);
 
@@ -133,9 +132,6 @@ socket.on("disconnect", function() {
 });
 
 socket.emit("getState");
-
-
-
 
 if (process.platform === "win32") {
   var rl = require("readline").createInterface({
