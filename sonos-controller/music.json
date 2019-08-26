@@ -2,27 +2,32 @@
   "14728453": {
     "service": "mpd",
     "uri": "albums://Steven%20Curtis%20Chapman/Signs%20of%20Life",
-    "sonos-apple-music-album-id": "724855958"
+    "apple-music-album-url": "https://music.apple.com/se/album/signs-of-life/724855958"
   },
   "24166653": {
     "service": "mpd",
-    "uri": "albums://David%20Phelps/David%20Phelps"
+    "uri": "albums://David%20Phelps/David%20Phelps",
+    "apple-music-album-url": "https://music.apple.com/se/album/david-phelps/715701321"
   },
   "34742950": {
     "service": "mpd",
-    "uri": "albums://Pentatonix/PTX%2C%20Vol.%201"
+    "uri": "albums://Pentatonix/PTX%2C%20Vol.%201",
+    "apple-music-album-url": "https://music.apple.com/se/album/ptx-vol-1-ep/877648576"
   },
   "64256353": {
     "service": "mpd",
-    "uri": "albums://P.O.D./Satellite"
+    "uri": "albums://P.O.D./Satellite",
+    "apple-music-album-url": "https://music.apple.com/se/album/satellite/300206574"
   },
   "74316650": {
     "service": "mpd",
-    "uri": "albums://Movits!/Ut%20ur%20min%20skalle"
+    "uri": "albums://Movits!/Ut%20ur%20min%20skalle",
+    "apple-music-album-url": "https://music.apple.com/se/album/ut-ur-min-skalle/1442349453"
   },
   "74886450": {
     "service": "mpd",
-    "uri": "albums://Koinonia/Frontline"
+    "uri": "albums://Koinonia/Frontline",
+    "apple-music-album-url": "https://music.apple.com/se/album/frontline/1100230804"
   },
   "44F517DF": {
     "service": "webradio",
@@ -46,358 +51,447 @@
   },
   "27B34F51": {
     "service": "mpd",
-    "uri": "albums://Nigel%20Kennedy%20%26%20The%20Kroke%20Band/East%20Meets%20East"
+    "uri": "albums://Nigel%20Kennedy%20%26%20The%20Kroke%20Band/East%20Meets%20East",
+    "apple-music-album-url": "https://music.apple.com/se/album/east-meets-east/696690048"
   },
   "57D42E3E": {
     "service": "mpd",
-    "uri": "albums://Henry%20Jackman/Uncharted%204%3A%20A%20Thief's%20End%20(Original%20Soundtrack)"
+    "uri": "albums://Henry%20Jackman/Uncharted%204%3A%20A%20Thief's%20End%20(Original%20Soundtrack)",
+    "apple-music-album-url": "https://music.apple.com/se/album/uncharted-4-a-thiefs-end-original-soundtrack/1110566158"
   },
   "D7FDBB32": {
     "service": "mpd",
-    "uri": "albums://Avicii/True"
+    "uri": "albums://Avicii/True",
+    "apple-music-album-url": "https://music.apple.com/se/album/true/1440872730"
   },
   "70F7ADE9": {
     "service": "mpd",
-    "uri": "albums://Justin%20Timberlake/Man%20of%20the%20Woods"
+    "uri": "albums://Justin%20Timberlake/Man%20of%20the%20Woods",
+    "apple-music-album-url": "https://music.apple.com/se/album/man-of-the-woods/1330759954"
   },
   "C40F8E53": {
     "service": "mpd",
-    "uri": "albums:///1%20Hour%20of%20Relaxing%20Zelda%20-%20Breath%20of%20the%20Wild%20Music"
+    "uri": "albums:///1%20Hour%20of%20Relaxing%20Zelda%20-%20Breath%20of%20the%20Wild%20Music",
+    "sonos-favorite": "1 Hour of Relaxing Zelda - Breath of the Wild Music"
   },
   "37EC1840": {
     "service": "mpd",
-    "uri": "albums://Coldplay/A%20Rush%20of%20Blood%20to%20the%20Head"
+    "uri": "albums://Coldplay/A%20Rush%20of%20Blood%20to%20the%20Head",
+    "apple-music-album-url": "https://music.apple.com/se/album/a-rush-of-blood-to-the-head/1122775993"
   },
   "97EF1D40": {
     "service": "mpd",
-    "uri": "albums://David%20Guetta/Listen"
+    "uri": "albums://David%20Guetta/Listen",
+    "apple-music-album-url": "https://music.apple.com/se/album/listen/924035374"
   },
   "57DA173E": {
     "service": "mpd",
-    "uri": "albums://Greg%20Edmonson/Uncharted%202%3A%20Among%20Thieves%20(Original%20Soundtrack%20from%20the%20Video%20Game)"
+    "uri": "albums://Greg%20Edmonson/Uncharted%202%3A%20Among%20Thieves%20(Original%20Soundtrack%20from%20the%20Video%20Game)",
+    "apple-music-album-url": "https://music.apple.com/se/album/uncharted-2-among-thieves-original-soundtrack-from/333046316"
   },
   "E73B6F51": {
     "service": "mpd",
-    "uri": "albums://Dream%20Theater/Scenes%20From%20a%20Memory"
+    "uri": "albums://Dream%20Theater/Scenes%20From%20a%20Memory",
+    "apple-music-album-url": "https://music.apple.com/se/album/metropolis-pt-2-scenes-from-a-memory/282694467"
   },
   "E75EB532": {
     "service": "mpd",
-    "uri": "albums://The%20Real%20Group/Original"
+    "uri": "albums://The%20Real%20Group/Original",
+    "apple-music-album-url": "https://music.apple.com/se/album/ori-ginal/207149137"
   },
   "9700DE51": {
     "service": "mpd",
-    "uri": "albums://Robbie%20Williams%20%26%20Gary%20Barlow/In%20and%20Out%20of%20Consciousness%3A%20Greatest%20Hits%201990-2010"
+    "uri": "albums://Robbie%20Williams%20%26%20Gary%20Barlow/In%20and%20Out%20of%20Consciousness%3A%20Greatest%20Hits%201990-2010",
+    "apple-music-album-url": "https://music.apple.com/se/album/in-and-out-of-consciousness-greatest-hits-1990-2010/725789681"
   },
   "7752F551": {
     "service": "mpd",
-    "uri": "albums://David%20Guetta/If%20We%20Ever%20(feat.%20Makeba)%20-%20Single"
+    "uri": "albums://David%20Guetta/If%20We%20Ever%20(feat.%20Makeba)%20-%20Single",
+    "apple-music-album-url": "https://music.apple.com/se/album/one-more-love-deluxe-version/710577474"
   },
   "C7A83E31": {
     "service": "mpd",
-    "uri": "albums://Toto/Falling%20in%20Between"
+    "uri": "albums://Toto/Falling%20in%20Between",
+    "apple-music-album-url": "https://music.apple.com/se/album/falling-in-between/124508416"
   },
   "9798F951": {
     "service": "mpd",
-    "uri": "albums://Toto/Hold%20the%20Line%3A%20the%20Very%20Best%20of%20Toto"
+    "uri": "albums://Toto/Hold%20the%20Line%3A%20the%20Very%20Best%20of%20Toto",
+    "sonos-favorite": "Hold the Line: the Very Best of Toto"
   },
   "47EC7551": {
     "service": "mpd",
-    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20III"
+    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20III",
+    "apple-music-album-url": "https://music.apple.com/se/album/ptx-vol-iii-ep/907175342"
   },
   "F73D7D51": {
     "service": "mpd",
-    "uri": "albums://Eminem/Curtain%20Call%3A%20The%20Hits"
+    "uri": "albums://Eminem/Curtain%20Call%3A%20The%20Hits",
+    "apple-music-album-url": "https://music.apple.com/se/album/curtain-call-the-hits/1440775335"
   },
   "E74DA051": {
     "service": "mpd",
-    "uri": "albums://Swedish%20House%20Mafia/Until%20Now"
+    "uri": "albums://Swedish%20House%20Mafia/Until%20Now",
+    "apple-music-album-url": "https://music.apple.com/se/album/until-now/716663922"
   },
   "77BB0F40": {
     "service": "mpd",
-    "uri": "albums://Dirty%20Loops/Loopified"
+    "uri": "albums://Dirty%20Loops/Loopified",
+    "apple-music-album-url": "https://music.apple.com/se/album/loopified/1443939821"
   },
   "D4278F50": {
     "service": "mpd",
-    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)"
+    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)",
+    "apple-music-album-url": "https://music.apple.com/se/album/frozen-original-motion-picture-soundtrack/1440620517"
   },
   "44BC8750": {
     "service": "mpd",
-    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20II"
+    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20II",
+    "apple-music-album-url": "https://music.apple.com/se/album/ptx-vol-ii-ep/877651699"
   },
   "94755E50": {
     "service": "mpd",
-    "uri": "albums://Robbie%20Williams/Swing%20When%20You're%20Winning"
+    "uri": "albums://Robbie%20Williams/Swing%20When%20You're%20Winning",
+    "apple-music-album-url": "https://music.apple.com/se/album/swing-when-youre-winning/724579589"
   },
   "349643F9": {
     "service": "mpd",
-    "uri": "albums://Avicii/Stories"
+    "uri": "albums://Avicii/Stories",
+    "apple-music-album-url": "https://music.apple.com/se/album/stories/1440834059"
   },
   "B4E40A50": {
     "service": "mpd",
-    "uri": "albums://Ylvis/Volume%201"
+    "uri": "albums://Ylvis/Volume%201",
+    "apple-music-album-url": "https://music.apple.com/se/album/volume-1/1442624911"
   },
   "F4287E50": {
     "service": "mpd",
-    "uri": "albums://Coldplay/X%26Y"
+    "uri": "albums://Coldplay/X%26Y",
+    "apple-music-album-url": "https://music.apple.com/se/album/x-y/1123076757"
   },
   "344A1150": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Mylo%20Xyloto"
+    "uri": "albums://Coldplay/Mylo%20Xyloto",
+    "apple-music-album-url": "https://music.apple.com/se/album/mylo-xyloto/726372830"
   },
   "2F3D69D9": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Ghost%20Stories"
+    "uri": "albums://Coldplay/Ghost%20Stories",
+    "apple-music-album-url": "https://music.apple.com/se/album/ghost-stories/829909653"
   },
   "C4975B50": {
     "service": "mpd",
-    "uri": "albums://Lady%20Gaga/Boys%20Boys%20Boys%20(Manhattan%20Clique)%20-%20Single"
+    "uri": "albums://Lady%20Gaga/Boys%20Boys%20Boys%20(Manhattan%20Clique)%20-%20Single",
+    "apple-music-album-url": "https://music.apple.com/se/album/the-fame-monster-deluxe-edition/1476727669"
   },
   "D4010850": {
     "service": "mpd",
-    "uri": "albums://Gorillaz/Demon%20Days"
+    "uri": "albums://Gorillaz/Demon%20Days",
+    "apple-music-album-url": "https://music.apple.com/se/album/demon-days/850571319"
   },
   "B76EFC3F": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Viva%20la%20Vida%20or%20Death%20and%20All%20His%20Friends"
+    "uri": "albums://Coldplay/Viva%20la%20Vida%20or%20Death%20and%20All%20His%20Friends",
+    "apple-music-album-url": "https://music.apple.com/se/album/viva-la-vida-or-death-and-all-his-friends/1122773394"
   },
   "34EB5450": {
     "service": "mpd",
-    "uri": "albums://Dream%20Theater/Train%20Of%20Thought"
+    "uri": "albums://Dream%20Theater/Train%20Of%20Thought",
+    "apple-music-album-url": "https://music.apple.com/se/album/train-of-thought/3631486"
   },
   "64A08250": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Paradise%20-%20Single"
+    "uri": "albums://Coldplay/Paradise%20-%20Single",
+    "sonos-favorite": "Paradise - Single"
   },
   "041D5650": {
     "service": "mpd",
-    "uri": "albums://Metallica/Metallica"
+    "uri": "albums://Metallica/Metallica",
+    "apple-music-album-url": "https://music.apple.com/se/album/metallica/1440833237"
   },
   "37DDFC3F": {
     "service": "mpd",
-    "uri": "albums://Earthsuit/Kaleidoscope%20Superior"
+    "uri": "albums://Earthsuit/Kaleidoscope%20Superior",
+    "apple-music-album-url": "https://music.apple.com/se/album/kaleidoscope-superior/724770874"
   },
   "C4B38D50": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Ghost%20Stories"
+    "uri": "albums://Coldplay/Ghost%20Stories",
+    "apple-music-album-url": "https://music.apple.com/se/album/ghost-stories/829909653"
   },
   "54BD6550": {
     "service": "mpd",
-    "uri": "albums://Movits!/%C3%84ppelknyckarjazz"
+    "uri": "albums://Movits!/%C3%84ppelknyckarjazz",
+    "apple-music-album-url": "https://music.apple.com/se/album/%C3%A4ppelknyckarjazz/1442067285"
   },
   "A7FB0940": {
     "service": "mpd",
-    "uri": "albums://Laleh/Sjung"
+    "uri": "albums://Laleh/Sjung",
+    "apple-music-album-url": "https://music.apple.com/se/album/sjung/484354150"
   },
   "D4EB5450": {
     "service": "mpd",
-    "uri": "albums://Laleh/Colors"
+    "uri": "albums://Laleh/Colors",
+    "apple-music-album-url": "https://music.apple.com/se/album/colors/705485720"
   },
   "74B13550": {
     "service": "mpd",
-    "uri": "albums://Salem%20Al%20Fakir/This%20Is%20Who%20I%20Am"
+    "uri": "albums://Salem%20Al%20Fakir/This%20Is%20Who%20I%20Am",
+    "apple-music-album-url": "https://music.apple.com/se/album/this-is-who-i-am/693317498"
   },
   "E49B5250": {
     "service": "mpd",
-    "uri": "albums://Salem%20Al%20Fakir/Astronaut"
+    "uri": "albums://Salem%20Al%20Fakir/Astronaut",
+    "apple-music-album-url": "https://music.apple.com/se/album/astronaut/693315236"
   },
   "D4766B53": {
     "service": "mpd",
-    "uri": "albums://David%20Phelps/Revelation"
+    "uri": "albums://David%20Phelps/Revelation",
+    "apple-music-album-url": "https://music.apple.com/se/album/revelation/1165925931"
   },
   "D735DE3F": {
     "service": "mpd",
-    "uri": "albums://Amy%20MacDonald/This%20Is%20The%20Life"
+    "uri": "albums://Amy%20MacDonald/This%20Is%20The%20Life",
+    "apple-music-album-url": "https://music.apple.com/se/album/this-is-the-life-deluxe/1440661161"
   },
   "A7CED83F": {
     "service": "mpd",
-    "uri": "albums://Amy%20Macdonald/A%20Curious%20Thing"
+    "uri": "albums://Amy%20Macdonald/A%20Curious%20Thing",
+    "apple-music-album-url": "https://music.apple.com/se/album/a-curious-thing/1445872997"
   },
   "144C6C53": {
     "service": "mpd",
-    "uri": "albums://Beyonc%C3%A9/BEYONC%C3%89"
+    "uri": "albums://Beyonc%C3%A9/BEYONC%C3%89",
+    "apple-music-album-url": "https://music.apple.com/se/album/beyonc%C3%A9/939783754"
   },
   "77D0EA3F": {
     "service": "mpd",
-    "uri": "albums://Beyonc%C3%A9/I%20Am...Sasha%20Fierce%20(Platinum%20Edition%20-%20Audio%20Version)"
+    "uri": "albums://Beyonc%C3%A9/I%20Am...Sasha%20Fierce%20(Platinum%20Edition%20-%20Audio%20Version)",
+    "apple-music-album-url": "https://music.apple.com/se/album/i-am-sasha-fierce-platinum-edition/336636572"
   },
   "54CC8753": {
     "service": "mpd",
-    "uri": "albums://Carola/St%C3%B6rst%20av%20allt"
+    "uri": "albums://Carola/St%C3%B6rst%20av%20allt",
+    "apple-music-album-url": "https://music.apple.com/se/album/st%C3%B6rst-av-allt/1443435061"
   },
   "347A6653": {
     "service": "mpd",
-    "uri": "albums://Elvis%20Presley/That's%20the%20Way%20It%20Is"
+    "uri": "albums://Elvis%20Presley/That's%20the%20Way%20It%20Is",
+    "sonos-favorite": "That's the Way It Is"
   },
   "A4C27753": {
     "service": "mpd",
-    "uri": "albums://Erik%20Tilling/Hopp"
+    "uri": "albums://Erik%20Tilling/Hopp",
+    "apple-music-album-url": "https://music.apple.com/se/album/hopp/431994282"
   },
   "D7D8B43F": {
     "service": "mpd",
-    "uri": "albums://Erik%20Tilling/I%20din%20hand%20ligger%20mina%20dagar"
+    "uri": "albums://Erik%20Tilling/I%20din%20hand%20ligger%20mina%20dagar",
+    "apple-music-album-url": "https://music.apple.com/se/album/i-din-hand-ligger-mina-dagar/260125472"
   },
   "B73AF83F": {
     "service": "mpd",
-    "uri": "albums://Greg%20Edmonson/Uncharted%3A%20Drake's%20Fortune%20(Original%20Soundtrack%20from%20the%20Video%20Game)"
+    "uri": "albums://Greg%20Edmonson/Uncharted%3A%20Drake's%20Fortune%20(Original%20Soundtrack%20from%20the%20Video%20Game)",
+    "apple-music-album-url": "https://music.apple.com/se/album/uncharted-drakes-fortune-original-soundtrack-from-video/296750118"
   },
   "A4D69253": {
     "service": "mpd",
-    "uri": "albums://Greg%20Edmonson/Uncharted%E2%84%A2%203%3A%20Drake's%20Deception%20(Original%20Soundtrack)"
+    "uri": "albums://Greg%20Edmonson/Uncharted%E2%84%A2%203%3A%20Drake's%20Deception%20(Original%20Soundtrack)",
+    "apple-music-album-url": "https://music.apple.com/se/album/uncharted-3-drakes-deception-original-soundtrack/473373959"
   },
   "771C1E40": {
     "service": "mpd",
-    "uri": "albums://Henry%20Jackman/Uncharted%3A%20The%20Lost%20Legacy%20(Original%20Game%20Soundtrack)"
+    "uri": "albums://Henry%20Jackman/Uncharted%3A%20The%20Lost%20Legacy%20(Original%20Game%20Soundtrack)",
+    "apple-music-album-url": "https://music.apple.com/se/album/uncharted-the-lost-legacy-original-game-soundtrack/1271576274"
   },
   "970AE33F": {
     "service": "mpd",
-    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Fellowship%20of%20the%20Ring"
+    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Fellowship%20of%20the%20Ring",
+    "sonos-favorite": "The Lord of the Rings: the Fellowship of the Ring"
   },
   "E4FB5153": {
     "service": "mpd",
-    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Return%20of%20the%20King"
+    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Return%20of%20the%20King",
+    "sonos-favorite": "The Lord of the Rings: the Return of the King"
   },
   "04E17E53": {
     "service": "mpd",
-    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Two%20Towers"
+    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Two%20Towers",
+    "sonos-favorite": "The Lord of the Rings: the Two Towers"
   },
   "D700A63F": {
     "service": "mpd",
-    "uri": "albums://John%20Williams/Star%20Wars%3A%20The%20Force%20Awakens%20(Original%20Motion%20Picture%20Soundtrack)"
+    "uri": "albums://John%20Williams/Star%20Wars%3A%20The%20Force%20Awakens%20(Original%20Motion%20Picture%20Soundtrack)",
+    "apple-music-album-url": "https://music.apple.com/se/album/star-wars-force-awakens-original-motion-picture-soundtrack/1440634745"
   },
   "37F7BF3F": {
     "service": "mpd",
-    "uri": "albums://Jonathan%20Johansson/Klagomuren"
+    "uri": "albums://Jonathan%20Johansson/Klagomuren",
+    "apple-music-album-url": "https://music.apple.com/se/album/klagomuren/1341441635"
   },
   "1746AB3F": {
     "service": "mpd",
-    "uri": "albums://Madonna/Confessions%20on%20a%20Dance%20Floor"
+    "uri": "albums://Madonna/Confessions%20on%20a%20Dance%20Floor",
+    "apple-music-album-url": "https://music.apple.com/se/album/confessions-on-a-dance-floor/91992239"
   },
   "D41B5C53": {
     "service": "mpd",
-    "uri": "albums://Mats%20Norrefalk%20%26%20Ulf%20Samuelsson/Incontro"
+    "uri": "albums://Mats%20Norrefalk%20%26%20Ulf%20Samuelsson/Incontro",
+    "sonos-favorite": "Incontro"
   },
   "67F90340": {
     "service": "mpd",
-    "uri": "albums://Michael%20W.%20Smith/Change%20Your%20World"
+    "uri": "albums://Michael%20W.%20Smith/Change%20Your%20World",
+    "apple-music-album-url": "https://music.apple.com/se/album/change-your-world/309274862"
   },
   "D784E53F": {
     "service": "mpd",
-    "uri": "albums://Michael%20W.%20Smith/Go%20West%20Young%20Man"
+    "uri": "albums://Michael%20W.%20Smith/Go%20West%20Young%20Man",
+    "apple-music-album-url": "https://music.apple.com/se/album/go-west-young-man/309274854"
   },
   "D4F15D53": {
     "service": "mpd",
-    "uri": "albums://English%20Chamber%20Orchestra%2C%20Jeffrey%20Tate%20%26%20Nigel%20Kennedy/Inner%20Thoughts"
+    "uri": "albums://English%20Chamber%20Orchestra%2C%20Jeffrey%20Tate%20%26%20Nigel%20Kennedy/Inner%20Thoughts",
+    "apple-music-album-url": "https://music.apple.com/se/album/inner-thoughts/696624627"
   },
   "A4BF6553": {
     "service": "mpd",
-    "uri": "albums://Nigel%20Kennedy/Kreisler"
+    "uri": "albums://Nigel%20Kennedy/Kreisler",
+    "apple-music-album-url": "https://music.apple.com/se/album/fritz-kreisler-some-shorter-works/726437884"
   },
   "D72AFD3F": {
     "service": "mpd",
-    "uri": "albums://Nigel%20Kennedy/Vivaldi%20The%20Four%20Seasons"
+    "uri": "albums://Nigel%20Kennedy/Vivaldi%20The%20Four%20Seasons",
+    "apple-music-album-url": "https://music.apple.com/se/album/vivaldi-the-four-seasons/695453272"
   },
   "B735A33F": {
     "service": "mpd",
-    "uri": "albums://Per-Erik%20Hallin/Morgonluft"
+    "uri": "albums://Per-Erik%20Hallin/Morgonluft",
+    "apple-music-album-url": "https://music.apple.com/se/album/morgonluft/1080730260"
   },
   "A4817B53": {
     "service": "mpd",
-    "uri": "albums://Robyn/Don't%20Stop%20the%20Music"
+    "uri": "albums://Robyn/Don't%20Stop%20the%20Music",
+    "apple-music-album-url": "https://music.apple.com/se/album/dont-stop-the-music/373774164"
   },
   "F764CB3F": {
     "service": "mpd",
-    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock"
+    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock",
+    "sonos-favorite": "Rhapsody in Rock"
   },
   "C7DEB03F": {
     "service": "mpd",
-    "uri": "albums://Robert%20Wells/Rhapsody%20In%20Rock%20-%20Part%20Two"
+    "uri": "albums://Robert%20Wells/Rhapsody%20In%20Rock%20-%20Part%20Two",
+    "sonos-favorite": "Rhapsody In Rock - Part Two"
   },
   "57CAED3F": {
     "service": "mpd",
-    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock%20III"
+    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock%20III",
+    "sonos-favorite": "Rhapsody in Rock III"
   },
   "C7ADAA3F": {
     "service": "mpd",
-    "uri": "albums://Steven%20Curtis%20Chapman/Declaration"
+    "uri": "albums://Steven%20Curtis%20Chapman/Declaration",
+    "apple-music-album-url": "https://music.apple.com/se/album/declaration/724779669"
   },
   "F47D7853": {
     "service": "mpd",
-    "uri": "albums://Steven%20Curtis%20Chapman/This%20Moment%20(Bonus%20Track%20Version)"
+    "uri": "albums://Steven%20Curtis%20Chapman/This%20Moment%20(Bonus%20Track%20Version)",
+    "apple-music-album-url": "https://music.apple.com/se/album/this-moment/716643974"
   },
   "A4B95253": {
     "service": "mpd",
-    "uri": "albums://The%20Corrs/Unplugged"
+    "uri": "albums://The%20Corrs/Unplugged",
+    "apple-music-album-url": "https://music.apple.com/se/album/the-corrs-unplugged-live/79303445"
   },
   "E736A63F": {
     "service": "mpd",
-    "uri": "albums://The%20Pussycat%20Dolls/PCD"
+    "uri": "albums://The%20Pussycat%20Dolls/PCD",
+    "apple-music-album-url": "https://music.apple.com/se/album/pcd-bonus-track-version/1440799528"
   },
   "674EAE3F": {
     "service": "mpd",
-    "uri": "albums://Toto/Fahrenheit"
+    "uri": "albums://Toto/Fahrenheit",
+    "apple-music-album-url": "https://music.apple.com/se/album/fahrenheit/200597956"
   },
   "67C12240": {
     "service": "mpd",
-    "uri": "albums://Toto/Toto%20XIV"
+    "uri": "albums://Toto/Toto%20XIV",
+    "apple-music-album-url": "https://music.apple.com/se/album/toto-xiv/956910427"
   },
   "B46D6E53": {
     "service": "mpd",
-    "uri": "albums://Agnetha%20F%C3%A4ltskog/A"
+    "uri": "albums://Agnetha%20F%C3%A4ltskog/A",
+    "apple-music-album-url": "https://music.apple.com/se/album/a/1440856933"
   },
   "1784B83F": {
     "service": "mpd",
-    "uri": "albums://Benny%20Andersson/Piano"
+    "uri": "albums://Benny%20Andersson/Piano",
+    "apple-music-album-url": "https://music.apple.com/se/album/piano/1440795610"
   },
   "A714CC3F": {
     "service": "mpd",
-    "uri": "albums://Hillsong/Blessed"
+    "uri": "albums://Hillsong/Blessed",
+    "apple-music-album-url": "https://music.apple.com/se/album/blessed/118411646"
   },
   "04465153": {
     "service": "mpd",
-    "uri": "albums://Majoy/Give%20Love"
+    "uri": "albums://Majoy/Give%20Love",
+    "sonos-favorite": "Give Love"
   },
   "374EED3F": {
     "service": "mpd",
-    "uri": "albums://The%20Beatles/1"
+    "uri": "albums://The%20Beatles/1",
+    "apple-music-album-url": "https://music.apple.com/se/album/1-2015-version/1440833098"
   },
   "643F5953": {
     "service": "mpd",
-    "uri": "albums://The%20Ark/The%20Ark%2C%20Arkeology%20-%20The%20Complete%20Singles%20Collection"
+    "uri": "albums://The%20Ark/The%20Ark%2C%20Arkeology%20-%20The%20Complete%20Singles%20Collection",
+    "apple-music-album-url": "https://music.apple.com/se/album/the-ark-arkeology-the-complete-singles-collection/690852421"
   },
   "C7841F40": {
     "service": "mpd",
-    "uri": "albums://Tower%20Of%20Power/Soul%20Vaccination%20Live%20%5BBonus%20Track%5D"
+    "uri": "albums://Tower%20Of%20Power/Soul%20Vaccination%20Live%20%5BBonus%20Track%5D",
+    "apple-music-album-url": "https://music.apple.com/se/album/soul-vaccination-tower-of-power-live/171736181"
   },
   "E74CC43F": {
     "service": "mpd",
-    "uri": "albums://Joybells/Having%20Church"
+    "uri": "albums://Joybells/Having%20Church",
+    "apple-music-album-url": "https://music.apple.com/se/album/having-church/476773558"
   },
   "17F8AF3F": {
     "service": "mpd",
-    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)"
+    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)",
+    "apple-music-album-url": "https://music.apple.com/se/album/frozen-original-motion-picture-soundtrack/1440620517"
   },
   "878D1E40": {
     "service": "mpd",
-    "uri": "albums://Stevie%20Wonder/Stevie%20Wonder%3A%20The%20Definitive%20Collection"
+    "uri": "albums://Stevie%20Wonder/Stevie%20Wonder%3A%20The%20Definitive%20Collection",
+    "apple-music-album-url": "https://music.apple.com/se/album/the-definitive-collection/1446742602"
   },
   "54D33A2D": {
     "service": "mpd",
-    "uri": "albums://Melody%20Gardot/My%20One%20and%20Only%20Thrill"
+    "uri": "albums://Melody%20Gardot/My%20One%20and%20Only%20Thrill",
+    "apple-music-album-url": "https://music.apple.com/se/album/my-one-and-only-thrill-bonus-track-version/1440782418"
   },
   "84A12B2D": {
     "service": "mpd",
-    "uri": "albums://Melody%20Gardot/The%20Absence"
+    "uri": "albums://Melody%20Gardot/The%20Absence",
+    "apple-music-album-url": "https://music.apple.com/se/album/the-absence/1443089092"
   },
   "141695DF": {
     "service": "mpd",
-    "uri": "albums://Steven%20Curtis%20Chapman/Speechless"
+    "uri": "albums://Steven%20Curtis%20Chapman/Speechless",
+    "apple-music-album-url": "https://music.apple.com/se/album/speechless/724866892"
   },
   "57EF123E": {
     "service": "mpd",
-    "uri": "albums://Per-Erik%20Hallin/Better%20Late%20Than%20Never"
+    "uri": "albums://Per-Erik%20Hallin/Better%20Late%20Than%20Never",
+    "apple-music-album-url": "https://music.apple.com/se/album/better-late-than-never/1080803103"
   },
   "64006ADF": {
     "service": "mpd",
-    "uri": "albums:///Super%20Mario%20Odyssey%20-%20Soundtrack"
+    "uri": "albums:///Super%20Mario%20Odyssey%20-%20Soundtrack",
+    "sonos-favorite": "Super Mario Odyssey - Soundtrack"
   }
 }

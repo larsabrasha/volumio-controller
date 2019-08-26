@@ -10,7 +10,9 @@ const music = require("./music.json");
 const serialPort = process.env.SERIAL_PORT || "/dev/ttyACM0"; // "/dev/tty.usbmodem1431" on my Mac
 const baseUrl = process.env.BASE_URL || "http://localhost:5005"; // http://volumio.local:5005
 
-function playSonosAppleMusicAlbum(albumId) {
+function playSonosAppleMusicAlbum(albumUrl) {
+  const albumId = albumUrl.split("/").reverse()[0];
+
   fetch(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId).then(_ => {
     fetch(baseUrl + "/Arbetsrum/clearqueue:" + albumId).then(_ => {
       fetch(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId);
@@ -96,8 +98,8 @@ parser.on("data", data => {
     }
   } else if (musicItem) {
     console.log(musicItem);
-    if (musicItem["sonos-apple-music-album-id"] != null) {
-      playSonosAppleMusicAlbum(musicItem["sonos-apple-music-album-id"]);
+    if (musicItem["apple-music-album-url"] != null) {
+      playSonosAppleMusicAlbum(musicItem["apple-music-album-url"]);
     } else if (musicItem["sonos-favorite"] != null) {
       playSonosFavorite(musicItem["sonos-favorite"]);
     }
