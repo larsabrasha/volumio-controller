@@ -14,8 +14,14 @@ function playSonosAppleMusicAlbum(albumUrl) {
   const albumId = albumUrl.split("/").reverse()[0];
 
   fetch(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId).then(_ => {
-    fetch(baseUrl + "/Arbetsrum/clearqueue:" + albumId).then(_ => {
-      fetch(baseUrl + "/Arbetsrum/applemusic/now/album:" + albumId);
+    fetch(baseUrl + "/Arbetsrum/clearqueue").then(_ => {
+      fetch(baseUrl + "/Arbetsrum/applemusic/queue/album:" + albumId).then(
+        _ => {
+          fetch(baseUrl + "/Arbetsrum/trackseek/0").then(_ => {
+            fetch(baseUrl + "/Arbetsrum/play");
+          });
+        }
+      );
     });
   });
 }
