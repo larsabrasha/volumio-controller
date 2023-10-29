@@ -1,27 +1,27 @@
 {
   "14728453": {
     "service": "mpd",
-    "uri": "albums://Steven%20Curtis%20Chapman/Signs%20of%20Life"
+    "uri": "music-library/INTERNAL/music/Steven Curtis Chapman/Signs of Life"
   },
   "24166653": {
     "service": "mpd",
-    "uri": "albums://David%20Phelps/David%20Phelps"
+    "uri": "music-library/INTERNAL/music/David Phelps/David Phelps"
   },
   "34742950": {
     "service": "mpd",
-    "uri": "albums://Pentatonix/PTX%2C%20Vol.%201"
+    "uri": "music-library/INTERNAL/music/Pentatonix/PTX, Vol. 1"
   },
   "64256353": {
     "service": "mpd",
-    "uri": "albums://P.O.D./Satellite"
+    "uri": "music-library/INTERNAL/music/P.O.D./Satellite"
   },
   "74316650": {
     "service": "mpd",
-    "uri": "albums://Movits!/Ut%20ur%20min%20skalle"
+    "uri": "music-library/INTERNAL/music/Movits!/Ut ur min skalle"
   },
   "74886450": {
     "service": "mpd",
-    "uri": "albums://Koinonia/Frontline"
+    "uri": "music-library/INTERNAL/music/Koinonia/Frontline"
   },
   "44F517DF": {
     "service": "webradio",
@@ -41,358 +41,357 @@
   },
   "27B34F51": {
     "service": "mpd",
-    "uri": "albums://Nigel%20Kennedy%20%26%20The%20Kroke%20Band/East%20Meets%20East"
+    "uri": "music-library/INTERNAL/music/Nigel Kennedy & The Kroke Band/East Meets East"
   },
   "57D42E3E": {
     "service": "mpd",
-    "uri": "albums://Henry%20Jackman/Uncharted%204%3A%20A%20Thief's%20End%20(Original%20Soundtrack)"
+    "uri": "music-library/INTERNAL/music/Henry Jackman/Uncharted 4: A Thief's End (Original Soundtrack)"
   },
   "D7FDBB32": {
     "service": "mpd",
-    "uri": "albums://Avicii/True"
+    "uri": "music-library/INTERNAL/music/Avicii/True"
   },
   "70F7ADE9": {
-    "service": "mpd",
-    "uri": "albums://Justin%20Timberlake/Man%20of%20the%20Woods"
+    "uri": "music-library/INTERNAL/music/Justin Timberlake/Man of the Woods"
   },
   "C40F8E53": {
     "service": "mpd",
-    "uri": "albums:///1%20Hour%20of%20Relaxing%20Zelda%20-%20Breath%20of%20the%20Wild%20Music"
+    "uri": "music-library/INTERNAL/music//1 Hour of Relaxing Zelda - Breath of the Wild Music"
   },
   "37EC1840": {
     "service": "mpd",
-    "uri": "albums://Coldplay/A%20Rush%20of%20Blood%20to%20the%20Head"
+    "uri": "music-library/INTERNAL/music/Coldplay/A Rush of Blood to the Head"
   },
   "97EF1D40": {
     "service": "mpd",
-    "uri": "albums://David%20Guetta/Listen"
+    "uri": "music-library/INTERNAL/music/David Guetta/Listen"
   },
   "57DA173E": {
     "service": "mpd",
-    "uri": "albums://Greg%20Edmonson/Uncharted%202%3A%20Among%20Thieves%20(Original%20Soundtrack%20from%20the%20Video%20Game)"
+    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted 2: Among Thieves (Original Soundtrack from the Video Game)"
   },
   "E73B6F51": {
     "service": "mpd",
-    "uri": "albums://Dream%20Theater/Scenes%20From%20a%20Memory"
+    "uri": "music-library/INTERNAL/music/Dream Theater/Scenes From a Memory"
   },
   "E75EB532": {
     "service": "mpd",
-    "uri": "albums://The%20Real%20Group/Original"
+    "uri": "music-library/INTERNAL/music/The Real Group/Original"
   },
   "9700DE51": {
     "service": "mpd",
-    "uri": "albums://Robbie%20Williams%20%26%20Gary%20Barlow/In%20and%20Out%20of%20Consciousness%3A%20Greatest%20Hits%201990-2010"
+    "uri": "music-library/INTERNAL/music/Robbie Williams & Gary Barlow/In and Out of Consciousness: Greatest Hits 1990-2010"
   },
   "7752F551": {
     "service": "mpd",
-    "uri": "albums://David%20Guetta/If%20We%20Ever%20(feat.%20Makeba)%20-%20Single"
+    "uri": "music-library/INTERNAL/music/David Guetta/If We Ever (feat. Makeba) - Single"
   },
   "C7A83E31": {
     "service": "mpd",
-    "uri": "albums://Toto/Falling%20in%20Between"
+    "uri": "music-library/INTERNAL/music/Toto/Falling in Between"
   },
   "9798F951": {
     "service": "mpd",
-    "uri": "albums://Toto/Hold%20the%20Line%3A%20the%20Very%20Best%20of%20Toto"
+    "uri": "music-library/INTERNAL/music/Toto/Hold the Line: the Very Best of Toto"
   },
   "47EC7551": {
     "service": "mpd",
-    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20III"
+    "uri": "music-library/INTERNAL/music/Pentatonix/PTX, Vol. III"
   },
   "F73D7D51": {
     "service": "mpd",
-    "uri": "albums://Eminem/Curtain%20Call%3A%20The%20Hits"
+    "uri": "music-library/INTERNAL/music/Eminem/Curtain Call: The Hits"
   },
   "E74DA051": {
     "service": "mpd",
-    "uri": "albums://Swedish%20House%20Mafia/Until%20Now"
+    "uri": "music-library/INTERNAL/music/Swedish House Mafia/Until Now"
   },
   "77BB0F40": {
     "service": "mpd",
-    "uri": "albums://Dirty%20Loops/Loopified"
+    "uri": "music-library/INTERNAL/music/Dirty Loops/Loopified"
   },
   "D4278F50": {
     "service": "mpd",
-    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)"
+    "uri": "music-library/INTERNAL/music/The Cast of Frozen/Frozen (Original Motion Picture Soundtrack)"
   },
   "44BC8750": {
     "service": "mpd",
-    "uri": "albums://Pentatonix/PTX%2C%20Vol.%20II"
+    "uri": "music-library/INTERNAL/music/Pentatonix/PTX, Vol. II"
   },
   "94755E50": {
     "service": "mpd",
-    "uri": "albums://Robbie%20Williams/Swing%20When%20You're%20Winning"
+    "uri": "music-library/INTERNAL/music/Robbie Williams/Swing When You're Winning"
   },
   "349643F9": {
     "service": "mpd",
-    "uri": "albums://Avicii/Stories"
+    "uri": "music-library/INTERNAL/music/Avicii/Stories"
   },
   "B4E40A50": {
     "service": "mpd",
-    "uri": "albums://Ylvis/Volume%201"
+    "uri": "music-library/INTERNAL/music/Ylvis/Volume 1"
   },
   "F4287E50": {
     "service": "mpd",
-    "uri": "albums://Coldplay/X%26Y"
+    "uri": "music-library/INTERNAL/music/Coldplay/X&Y"
   },
   "344A1150": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Mylo%20Xyloto"
+    "uri": "music-library/INTERNAL/music/Coldplay/Mylo Xyloto"
   },
   "2F3D69D9": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Ghost%20Stories"
+    "uri": "music-library/INTERNAL/music/Coldplay/Ghost Stories"
   },
   "C4975B50": {
     "service": "mpd",
-    "uri": "albums://Lady%20Gaga/Boys%20Boys%20Boys%20(Manhattan%20Clique)%20-%20Single"
+    "uri": "music-library/INTERNAL/music/Lady Gaga/Boys Boys Boys (Manhattan Clique) - Single"
   },
   "D4010850": {
     "service": "mpd",
-    "uri": "albums://Gorillaz/Demon%20Days"
+    "uri": "music-library/INTERNAL/music/Gorillaz/Demon Days"
   },
   "B76EFC3F": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Viva%20la%20Vida%20or%20Death%20and%20All%20His%20Friends"
+    "uri": "music-library/INTERNAL/music/Coldplay/Viva la Vida or Death and All His Friends"
   },
   "34EB5450": {
     "service": "mpd",
-    "uri": "albums://Dream%20Theater/Train%20Of%20Thought"
+    "uri": "music-library/INTERNAL/music/Dream Theater/Train Of Thought"
   },
   "64A08250": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Paradise%20-%20Single"
+    "uri": "music-library/INTERNAL/music/Coldplay/Paradise - Single"
   },
   "041D5650": {
     "service": "mpd",
-    "uri": "albums://Metallica/Metallica"
+    "uri": "music-library/INTERNAL/music/Metallica/Metallica"
   },
   "37DDFC3F": {
     "service": "mpd",
-    "uri": "albums://Earthsuit/Kaleidoscope%20Superior"
+    "uri": "music-library/INTERNAL/music/Earthsuit/Kaleidoscope Superior"
   },
   "C4B38D50": {
     "service": "mpd",
-    "uri": "albums://Coldplay/Ghost%20Stories"
+    "uri": "music-library/INTERNAL/music/Coldplay/Ghost Stories"
   },
   "54BD6550": {
     "service": "mpd",
-    "uri": "albums://Movits!/%C3%84ppelknyckarjazz"
+    "uri": "music-library/INTERNAL/music/Movits!/Äppelknyckarjazz"
   },
   "A7FB0940": {
     "service": "mpd",
-    "uri": "albums://Laleh/Sjung"
+    "uri": "music-library/INTERNAL/music/Laleh/Sjung"
   },
   "D4EB5450": {
     "service": "mpd",
-    "uri": "albums://Laleh/Colors"
+    "uri": "music-library/INTERNAL/music/Laleh/Colors"
   },
   "74B13550": {
     "service": "mpd",
-    "uri": "albums://Salem%20Al%20Fakir/This%20Is%20Who%20I%20Am"
+    "uri": "music-library/INTERNAL/music/Salem Al Fakir/This Is Who I Am"
   },
   "E49B5250": {
     "service": "mpd",
-    "uri": "albums://Salem%20Al%20Fakir/Astronaut"
+    "uri": "music-library/INTERNAL/music/Salem Al Fakir/Astronaut"
   },
   "D4766B53": {
     "service": "mpd",
-    "uri": "albums://David%20Phelps/Revelation"
+    "uri": "music-library/INTERNAL/music/David Phelps/Revelation"
   },
   "D735DE3F": {
     "service": "mpd",
-    "uri": "albums://Amy%20MacDonald/This%20Is%20The%20Life"
+    "uri": "music-library/INTERNAL/music/Amy MacDonald/This Is The Life"
   },
   "A7CED83F": {
     "service": "mpd",
-    "uri": "albums://Amy%20Macdonald/A%20Curious%20Thing"
+    "uri": "music-library/INTERNAL/music/Amy Macdonald/A Curious Thing"
   },
   "144C6C53": {
     "service": "mpd",
-    "uri": "albums://Beyonc%C3%A9/BEYONC%C3%89"
+    "uri": "music-library/INTERNAL/music/Beyoncé/BEYONCÉ"
   },
   "77D0EA3F": {
     "service": "mpd",
-    "uri": "albums://Beyonc%C3%A9/I%20Am...Sasha%20Fierce%20(Platinum%20Edition%20-%20Audio%20Version)"
+    "uri": "music-library/INTERNAL/music/Beyoncé/I Am...Sasha Fierce (Platinum Edition - Audio Version)"
   },
   "54CC8753": {
     "service": "mpd",
-    "uri": "albums://Carola/St%C3%B6rst%20av%20allt"
+    "uri": "music-library/INTERNAL/music/Carola/Störst av allt"
   },
   "347A6653": {
     "service": "mpd",
-    "uri": "albums://Elvis%20Presley/That's%20the%20Way%20It%20Is"
+    "uri": "music-library/INTERNAL/music/Elvis Presley/That's the Way It Is"
   },
   "A4C27753": {
     "service": "mpd",
-    "uri": "albums://Erik%20Tilling/Hopp"
+    "uri": "music-library/INTERNAL/music/Erik Tilling/Hopp"
   },
   "D7D8B43F": {
     "service": "mpd",
-    "uri": "albums://Erik%20Tilling/I%20din%20hand%20ligger%20mina%20dagar"
+    "uri": "music-library/INTERNAL/music/Erik Tilling/I din hand ligger mina dagar"
   },
   "B73AF83F": {
     "service": "mpd",
-    "uri": "albums://Greg%20Edmonson/Uncharted%3A%20Drake's%20Fortune%20(Original%20Soundtrack%20from%20the%20Video%20Game)"
+    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted: Drake's Fortune (Original Soundtrack from the Video Game)"
   },
   "A4D69253": {
     "service": "mpd",
-    "uri": "albums://Greg%20Edmonson/Uncharted%E2%84%A2%203%3A%20Drake's%20Deception%20(Original%20Soundtrack)"
+    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted™ 3: Drake's Deception (Original Soundtrack)"
   },
   "771C1E40": {
     "service": "mpd",
-    "uri": "albums://Henry%20Jackman/Uncharted%3A%20The%20Lost%20Legacy%20(Original%20Game%20Soundtrack)"
+    "uri": "music-library/INTERNAL/music/Henry Jackman/Uncharted: The Lost Legacy (Original Game Soundtrack)"
   },
   "970AE33F": {
     "service": "mpd",
-    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Fellowship%20of%20the%20Ring"
+    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings: the Fellowship of the Ring"
   },
   "E4FB5153": {
     "service": "mpd",
-    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Return%20of%20the%20King"
+    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings: the Return of the King"
   },
   "04E17E53": {
     "service": "mpd",
-    "uri": "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Two%20Towers"
+    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings: the Two Towers"
   },
   "D700A63F": {
     "service": "mpd",
-    "uri": "albums://John%20Williams/Star%20Wars%3A%20The%20Force%20Awakens%20(Original%20Motion%20Picture%20Soundtrack)"
+    "uri": "music-library/INTERNAL/music/John Williams/Star Wars: The Force Awakens (Original Motion Picture Soundtrack)"
   },
   "37F7BF3F": {
     "service": "mpd",
-    "uri": "albums://Jonathan%20Johansson/Klagomuren"
+    "uri": "music-library/INTERNAL/music/Jonathan Johansson/Klagomuren"
   },
   "1746AB3F": {
     "service": "mpd",
-    "uri": "albums://Madonna/Confessions%20on%20a%20Dance%20Floor"
+    "uri": "music-library/INTERNAL/music/Madonna/Confessions on a Dance Floor"
   },
   "D41B5C53": {
     "service": "mpd",
-    "uri": "albums://Mats%20Norrefalk%20%26%20Ulf%20Samuelsson/Incontro"
+    "uri": "music-library/INTERNAL/music/Mats Norrefalk & Ulf Samuelsson/Incontro"
   },
   "67F90340": {
     "service": "mpd",
-    "uri": "albums://Michael%20W.%20Smith/Change%20Your%20World"
+    "uri": "music-library/INTERNAL/music/Michael W. Smith/Change Your World"
   },
   "D784E53F": {
     "service": "mpd",
-    "uri": "albums://Michael%20W.%20Smith/Go%20West%20Young%20Man"
+    "uri": "music-library/INTERNAL/music/Michael W. Smith/Go West Young Man"
   },
   "D4F15D53": {
     "service": "mpd",
-    "uri": "albums://English%20Chamber%20Orchestra%2C%20Jeffrey%20Tate%20%26%20Nigel%20Kennedy/Inner%20Thoughts"
+    "uri": "music-library/INTERNAL/music/English Chamber Orchestra, Jeffrey Tate & Nigel Kennedy/Inner Thoughts"
   },
   "A4BF6553": {
     "service": "mpd",
-    "uri": "albums://Nigel%20Kennedy/Kreisler"
+    "uri": "music-library/INTERNAL/music/Nigel Kennedy/Kreisler"
   },
   "D72AFD3F": {
     "service": "mpd",
-    "uri": "albums://Nigel%20Kennedy/Vivaldi%20The%20Four%20Seasons"
+    "uri": "music-library/INTERNAL/music/Nigel Kennedy/Vivaldi The Four Seasons"
   },
   "B735A33F": {
     "service": "mpd",
-    "uri": "albums://Per-Erik%20Hallin/Morgonluft"
+    "uri": "music-library/INTERNAL/music/Per-Erik Hallin/Morgonluft"
   },
   "A4817B53": {
     "service": "mpd",
-    "uri": "albums://Robyn/Don't%20Stop%20the%20Music"
+    "uri": "music-library/INTERNAL/music/Robyn/Don't Stop the Music"
   },
   "F764CB3F": {
     "service": "mpd",
-    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock"
+    "uri": "music-library/INTERNAL/music/Robert Wells/Rhapsody in Rock"
   },
   "C7DEB03F": {
     "service": "mpd",
-    "uri": "albums://Robert%20Wells/Rhapsody%20In%20Rock%20-%20Part%20Two"
+    "uri": "music-library/INTERNAL/music/Robert Wells/Rhapsody In Rock - Part Two"
   },
   "57CAED3F": {
     "service": "mpd",
-    "uri": "albums://Robert%20Wells/Rhapsody%20in%20Rock%20III"
+    "uri": "music-library/INTERNAL/music/Robert Wells/Rhapsody in Rock III"
   },
   "C7ADAA3F": {
     "service": "mpd",
-    "uri": "albums://Steven%20Curtis%20Chapman/Declaration"
+    "uri": "music-library/INTERNAL/music/Steven Curtis Chapman/Declaration"
   },
   "F47D7853": {
     "service": "mpd",
-    "uri": "albums://Steven%20Curtis%20Chapman/This%20Moment%20(Bonus%20Track%20Version)"
+    "uri": "music-library/INTERNAL/music/Steven Curtis Chapman/This Moment (Bonus Track Version)"
   },
   "A4B95253": {
     "service": "mpd",
-    "uri": "albums://The%20Corrs/Unplugged"
+    "uri": "music-library/INTERNAL/music/The Corrs/Unplugged"
   },
   "E736A63F": {
     "service": "mpd",
-    "uri": "albums://The%20Pussycat%20Dolls/PCD"
+    "uri": "music-library/INTERNAL/music/The Pussycat Dolls/PCD"
   },
   "674EAE3F": {
     "service": "mpd",
-    "uri": "albums://Toto/Fahrenheit"
+    "uri": "music-library/INTERNAL/music/Toto/Fahrenheit"
   },
   "67C12240": {
     "service": "mpd",
-    "uri": "albums://Toto/Toto%20XIV"
+    "uri": "music-library/INTERNAL/music/Toto/Toto XIV"
   },
   "B46D6E53": {
     "service": "mpd",
-    "uri": "albums://Agnetha%20F%C3%A4ltskog/A"
+    "uri": "music-library/INTERNAL/music/Agnetha Fältskog/A"
   },
   "1784B83F": {
     "service": "mpd",
-    "uri": "albums://Benny%20Andersson/Piano"
+    "uri": "music-library/INTERNAL/music/Benny Andersson/Piano"
   },
   "A714CC3F": {
     "service": "mpd",
-    "uri": "albums://Hillsong/Blessed"
+    "uri": "music-library/INTERNAL/music/Hillsong/Blessed"
   },
   "04465153": {
     "service": "mpd",
-    "uri": "albums://Majoy/Give%20Love"
+    "uri": "music-library/INTERNAL/music/Majoy/Give Love"
   },
   "374EED3F": {
     "service": "mpd",
-    "uri": "albums://The%20Beatles/1"
+    "uri": "music-library/INTERNAL/music/The Beatles/1"
   },
   "643F5953": {
     "service": "mpd",
-    "uri": "albums://The%20Ark/The%20Ark%2C%20Arkeology%20-%20The%20Complete%20Singles%20Collection"
+    "uri": "music-library/INTERNAL/music/The Ark/The Ark, Arkeology - The Complete Singles Collection"
   },
   "C7841F40": {
     "service": "mpd",
-    "uri": "albums://Tower%20Of%20Power/Soul%20Vaccination%20Live%20%5BBonus%20Track%5D"
+    "uri": "music-library/INTERNAL/music/Tower Of Power/Soul Vaccination Live [Bonus Track]"
   },
   "E74CC43F": {
     "service": "mpd",
-    "uri": "albums://Joybells/Having%20Church"
+    "uri": "music-library/INTERNAL/music/Joybells/Having Church"
   },
   "17F8AF3F": {
     "service": "mpd",
-    "uri": "albums://The%20Cast%20of%20Frozen/Frozen%20(Original%20Motion%20Picture%20Soundtrack)"
+    "uri": "music-library/INTERNAL/music/The Cast of Frozen/Frozen (Original Motion Picture Soundtrack)"
   },
   "878D1E40": {
     "service": "mpd",
-    "uri": "albums://Stevie%20Wonder/Stevie%20Wonder%3A%20The%20Definitive%20Collection"
+    "uri": "music-library/INTERNAL/music/Stevie Wonder/Stevie Wonder: The Definitive Collection"
   },
   "54D33A2D": {
     "service": "mpd",
-    "uri": "albums://Melody%20Gardot/My%20One%20and%20Only%20Thrill"
+    "uri": "music-library/INTERNAL/music/Melody Gardot/My One and Only Thrill"
   },
   "84A12B2D": {
     "service": "mpd",
-    "uri": "albums://Melody%20Gardot/The%20Absence"
+    "uri": "music-library/INTERNAL/music/Melody Gardot/The Absence"
   },
   "141695DF": {
     "service": "mpd",
-    "uri": "albums://Steven%20Curtis%20Chapman/Speechless"
+    "uri": "music-library/INTERNAL/music/Steven Curtis Chapman/Speechless"
   },
   "57EF123E": {
     "service": "mpd",
-    "uri": "albums://Per-Erik%20Hallin/Better%20Late%20Than%20Never"
+    "uri": "music-library/INTERNAL/music/Per-Erik Hallin/Better Late Than Never"
   },
   "64006ADF": {
     "service": "mpd",
-    "uri": "albums:///Super%20Mario%20Odyssey%20-%20Soundtrack"
+    "uri": "music-library/INTERNAL/music//Super Mario Odyssey - Soundtrack"
   }
 }

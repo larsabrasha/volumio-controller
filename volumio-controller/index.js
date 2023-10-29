@@ -1,23 +1,23 @@
-const SerialPort = require("serialport");
-const Readline = SerialPort.parsers.Readline;
+const { SerialPort } = require("serialport");
+const { ReadlineParser } = require("@serialport/parser-readline");
 const io = require("socket.io-client");
-const path = require("path");
-const fs = require("fs");
+const path = require("node:path");
+const fs = require("node:fs");
 
 const controls = require("./controls.json");
 const music = require("./music.json");
 
-const serialPort = process.env.SERIAL_PORT || "/dev/ttyACM0"; // "/dev/tty.usbmodem1431" on my Mac
-const volumioServer = process.env.VOLUMIO_SERVER || "http://localhost:3000"; // http://volumio.local
+const serialPath = process.env.SERIAL_PATH || "/dev/ttyACM0";
+const volumioServer = process.env.VOLUMIO_SERVER || "http://localhost:3000";
 
-const port = new SerialPort(serialPort, {
+const port = new SerialPort({
+  path: serialPath,
   baudRate: 9600
 });
 
 var currentState = {};
-var nextAction = null;
 
-function registerMusic(data) {
+function registerMusic(cardId) {
   var newMusicItem = {
     service: currentState.service,
     uri: currentState.uri
@@ -32,7 +32,7 @@ function registerMusic(data) {
     newMusicItem.uri = "albums://" + encodedArtist + "/" + encodedAlbum;
   }
 
-  music[data] = newMusicItem;
+  music[cardId] = newMusicItem;
 
   var jsonContent = JSON.stringify(music, null, 2);
 
@@ -43,7 +43,7 @@ function registerMusic(data) {
       return console.log(err);
     }
 
-    console.log(data + " is now connected to: " + JSON.stringify(newMusicItem));
+    console.log(cardId + " is now connected to: " + JSON.stringify(newMusicItem));
   });
 }
 
@@ -62,29 +62,27 @@ port.on("disconnected", function(err) {
   process.exit();
 });
 
-const parser = port.pipe(new Readline({ delimiter: "\r\n" }));
+const parser = port.pipe(new ReadlineParser({ delimiter: "\r\n" }));
 
 parser.on("data", data => {
-  const ignoredData = [
-    "This code scan the MIFARE Classsic NUID.",
-    "Using the following key:FFFFFFFFFFFF",
-    "PICC type: MIFARE 1KB",
-    "The NUID tag is:"
-  ];
-  if (ignoredData.indexOf(data) != -1) {
-    return;
-  }
-
   console.log(data);
 
-  const controlItem = controls[data];
-  const musicItem = music[data];
+  const cardId = data.startsWith("NewCard") ? data.slice(8) : null;
 
-  if (nextAction === "registerMusic") {
-    nextAction = null;
-    registerMusic(data);
+  if (data === "CardRemoved") {
+    if (
+      currentState.service === "webradio" ||
+      currentState.service === "tunein_radio"
+    ) {
+      socket.emit("stop");
+    } else {
+      socket.emit("pause");
+    }
     return;
   }
+
+  const controlItem = controls[cardId];
+  const musicItem = music[cardId];
 
   if (controlItem) {
     console.log(controlItem);
@@ -102,13 +100,6 @@ parser.on("data", data => {
       } else {
         socket.emit("play");
       }
-    } else if (controlItem === "startRegisterMusic") {
-      nextAction = "registerMusic";
-
-      setTimeout(function() {
-        console.log("stopped register music");
-        nextAction = null;
-      }, 5000);
     } else {
       socket.emit(controlItem);
     }
@@ -116,11 +107,11 @@ parser.on("data", data => {
     console.log(musicItem);
     socket.emit("replaceAndPlay", musicItem);
   } else if (currentState.status === "play") {
-    registerMusic(data);
+    registerMusic(cardId);
   }
 });
 
-var socket = io.connect(volumioServer);
+const socket = io.connect(volumioServer);
 
 socket.on("pushState", function(data) {
   console.log("status: " + data.status);

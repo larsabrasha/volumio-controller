@@ -1,19 +1,6 @@
 /*
- * --------------------------------------------------------------------------------------------------------------------
- * Example sketch/program showing how to read new NUID from a PICC to serial.
- * --------------------------------------------------------------------------------------------------------------------
- * This is a MFRC522 library example; for further details and other examples see: https://github.com/miguelbalboa/rfid
- *
- * Example sketch/program showing how to the read data from a PICC (that is: a RFID Tag or Card) using a MFRC522 based RFID
- * Reader on the Arduino SPI interface.
- *
- * When the Arduino and the MFRC522 module are connected (see the pin layout below), load this sketch into Arduino IDE
- * then verify/compile and upload it. To see the output: use Tools, Serial Monitor of the IDE (hit Ctrl+Shft+M). When
- * you present a PICC (that is: a RFID Tag or Card) at reading distance of the MFRC522 Reader/PCD, the serial output
- * will show the type, and the NUID if a new card has been detected. Note: you may see "Timeout in communication" messages
- * when removing the PICC from reading distance too early.
- *
- * @license Released into the public domain.
+ * Reading RFID card and printing 
+ * Inspired by https://highvoltages.co/tutorial/arduino-tutorial/arduino-mfrc522-tutorial-is-rfid-tag-present-or-removed/
  *
  * Typical pin layout used:
  * -----------------------------------------------------------------------------------------
@@ -30,111 +17,87 @@
 
 #include <SPI.h>
 #include <MFRC522.h>
-#include <JC_Button.h>
 
-#define SS_PIN 10
 #define RST_PIN 9
+#define SS_PIN 10
 
-MFRC522 rfid(SS_PIN, RST_PIN); // Instance of the class
+MFRC522 mfrc522(SS_PIN, RST_PIN);  // Create MFRC522 instance
+MFRC522::Uid cardId;
 
-MFRC522::MIFARE_Key key;
-
-// Init array that will store new NUID
-// byte nuidPICC[4];
-
-Button button1(3); // Connect your button between pin 3 and GND
-Button button2(4); // Connect your button between pin 4 and GND
-Button button3(5); // Connect your button between pin 5 and GND
-
-void setup()
+void printHex(uint8_t *data, uint8_t length)
 {
-  button1.begin();
-  button2.begin();
-  button3.begin();
-
-  pinMode(2, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(2), handleButtons, CHANGE);
-
-  Serial.begin(9600);
-  SPI.begin();     // Init SPI bus
-  rfid.PCD_Init(); // Init MFRC522
-
-  for (byte i = 0; i < 6; i++)
+  for (byte i = 0; i < length; i++)
   {
+    Serial.print(data[i] < 0x10 ? "0" : "");
+    Serial.print(data[i], HEX);
+  }
+}
+
+void copyReadCardIdInto(MFRC522::Uid *id) {
+  memset(id, 0, sizeof(MFRC522::Uid));
+  memcpy(id->uidByte, mfrc522.uid.uidByte, mfrc522.uid.size);
+  id->size = mfrc522.uid.size;
+  id->sak = mfrc522.uid.sak;
+}
+
+/***/
+
+void setup() {
+  Serial.begin(9600);  // Initialize serial communications with the PC
+  SPI.begin();         // Init SPI bus
+  mfrc522.PCD_Init();
+}
+
+void loop() {
+  MFRC522::MIFARE_Key key;
+  for (byte i = 0; i < 6; i++) {
     key.keyByte[i] = 0xFF;
   }
-
-  Serial.println(F("This code scan the MIFARE Classsic NUID."));
-  Serial.print(F("Using the following key:"));
-  printHex(key.keyByte, MFRC522::MF_KEY_SIZE);
-  Serial.println();
-}
-
-void loop()
-{
+  MFRC522::StatusCode status;
 
   // Look for new cards
-  if (!rfid.PICC_IsNewCardPresent())
+  if (!mfrc522.PICC_IsNewCardPresent()) {
     return;
-
-  // Verify if the NUID has been readed
-  if (!rfid.PICC_ReadCardSerial())
-    return;
-
-  Serial.print(F("PICC type: "));
-  MFRC522::PICC_Type piccType = rfid.PICC_GetType(rfid.uid.sak);
-  Serial.println(rfid.PICC_GetTypeName(piccType));
-
-  // Check is the PICC of Classic MIFARE type
-  if (piccType != MFRC522::PICC_TYPE_MIFARE_MINI &&
-      piccType != MFRC522::PICC_TYPE_MIFARE_1K &&
-      piccType != MFRC522::PICC_TYPE_MIFARE_4K)
-  {
-    Serial.println(F("Your tag is not of type MIFARE Classic."));
+  }
+  if (!mfrc522.PICC_ReadCardSerial()) {
     return;
   }
 
-  Serial.println(F("The NUID tag is:"));
-  printHex(rfid.uid.uidByte, rfid.uid.size);
+  copyReadCardIdInto(&cardId);
+  Serial.print("NewCard ");
+  printHex(cardId.uidByte, cardId.size);
+  Serial.println("");
 
-  Serial.println();
-  Serial.println();
+  while (true) {
+    uint8_t control = 0x00;
 
-  // Halt PICC
-  rfid.PICC_HaltA();
+    for (int i = 0; i < 3; i++) {
+      if (!mfrc522.PICC_IsNewCardPresent()) {
+        if (mfrc522.PICC_ReadCardSerial()) {
+          // Serial.print('a');
+          control |= 0x16;
+        }
+        if (mfrc522.PICC_ReadCardSerial()) {
+          // Serial.print('b');
+          control |= 0x16;
+        }
+        // Serial.print('c');
+        control += 0x1;
+      }
+      // Serial.print('d');
+      control += 0x4;
+    }
 
-  // Stop encryption on PCD
-  rfid.PCD_StopCrypto1();
-}
-
-/**
- * Helper routine to dump a byte array as hex values to Serial.
- */
-void printHex(byte *buffer, byte bufferSize)
-{
-  for (byte i = 0; i < bufferSize; i++)
-  {
-    //Serial.print(buffer[i] < 0x10 ? " 0" : " ");
-    Serial.print(buffer[i] < 0x10 ? "0" : "");
-    Serial.print(buffer[i], HEX);
+    // Serial.println(control);
+    if (control == 13 || control == 14) {
+      // Card is still there
+    } else {
+      break;
+    }
   }
-}
+  Serial.println("CardRemoved");
+  delay(200);  //change value if you want to read cards faster
 
-void handleButtons() {
-  button1.read();
-  button2.read();
-  button3.read();
-
-  if (button1.wasPressed()) {
-    Serial.println("button1");
-  }
-
-  if (button2.wasPressed()) {
-    Serial.println("button2");
-  }
-
-  if (button3.wasPressed()) {
-    Serial.println("button3");
-  }
-
+  mfrc522.PICC_HaltA();
+  mfrc522.PCD_StopCrypto1();
 }
