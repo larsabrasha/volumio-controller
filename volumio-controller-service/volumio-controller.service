@@ -2,7 +2,7 @@
 Description = Volumio Controller
 
 [Service]
-ExecStart=/usr/local/bin/node /home/volumio/volumio-controller/index.js
+ExecStart=/usr/bin/node /data/INTERNAL/programs/volumio-controller/index.js
 Restart=always
 StandardOutput=syslog
 StandardError=syslog

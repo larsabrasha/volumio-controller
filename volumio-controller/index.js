@@ -1,8 +1,8 @@
 const { SerialPort } = require("serialport");
 const { ReadlineParser } = require("@serialport/parser-readline");
 const io = require("socket.io-client");
-const path = require("node:path");
-const fs = require("node:fs");
+const path = require("path");
+const fs = require("fs");
 
 const controls = require("./controls.json");
 const music = require("./music.json");
