@@ -45,7 +45,7 @@
   },
   "57D42E3E": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Henry Jackman/Uncharted 4: A Thief's End (Original Soundtrack)"
+    "uri": "music-library/INTERNAL/music/Henry Jackman/Uncharted 4_ A Thief's End (Original Soundtrack)"
   },
   "D7FDBB32": {
     "service": "mpd",
@@ -56,7 +56,7 @@
   },
   "C40F8E53": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music//1 Hour of Relaxing Zelda - Breath of the Wild Music"
+    "uri": "music-library/INTERNAL/music/Unknown Artist/1 Hour of Relaxing Zelda - Breath of the Wild Music"
   },
   "37EC1840": {
     "service": "mpd",
@@ -68,7 +68,7 @@
   },
   "57DA173E": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted 2: Among Thieves (Original Soundtrack from the Video Game)"
+    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted 2_ Among Thieves (Original Soundtrack from the Video Game)"
   },
   "E73B6F51": {
     "service": "mpd",
@@ -80,7 +80,7 @@
   },
   "9700DE51": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Robbie Williams & Gary Barlow/In and Out of Consciousness: Greatest Hits 1990-2010"
+    "uri": "music-library/INTERNAL/music/Robbie Williams & Gary Barlow/In and Out of Consciousness_ Greatest Hits 1990-2010"
   },
   "7752F551": {
     "service": "mpd",
@@ -92,7 +92,7 @@
   },
   "9798F951": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Toto/Hold the Line: the Very Best of Toto"
+    "uri": "music-library/INTERNAL/music/Toto/Hold the Line_ the Very Best of Toto"
   },
   "47EC7551": {
     "service": "mpd",
@@ -100,7 +100,7 @@
   },
   "F73D7D51": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Eminem/Curtain Call: The Hits"
+    "uri": "music-library/INTERNAL/music/Eminem/Curtain Call_ The Hits"
   },
   "E74DA051": {
     "service": "mpd",
@@ -112,7 +112,7 @@
   },
   "D4278F50": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/The Cast of Frozen/Frozen (Original Motion Picture Soundtrack)"
+    "uri": "music-library/INTERNAL/music/Compilations/Frozen (Original Motion Picture Soundtrack)"
   },
   "44BC8750": {
     "service": "mpd",
@@ -232,31 +232,31 @@
   },
   "B73AF83F": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted: Drake's Fortune (Original Soundtrack from the Video Game)"
+    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted_ Drake's Fortune (Original Soundtrack from the Video Game)"
   },
   "A4D69253": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted™ 3: Drake's Deception (Original Soundtrack)"
+    "uri": "music-library/INTERNAL/music/Greg Edmonson/Uncharted™ 3_ Drake's Deception (Original Soundtrack)"
   },
   "771C1E40": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Henry Jackman/Uncharted: The Lost Legacy (Original Game Soundtrack)"
+    "uri": "music-library/INTERNAL/music/Henry Jackman/Uncharted_ The Lost Legacy (Original Game Soundtrack)"
   },
   "970AE33F": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings: the Fellowship of the Ring"
+    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings_ the Fellowship of the Ring"
   },
   "E4FB5153": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings: the Return of the King"
+    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings_ the Return of the King"
   },
   "04E17E53": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings: the Two Towers"
+    "uri": "music-library/INTERNAL/music/Howard Shore/The Lord of the Rings_ the Two Towers"
   },
   "D700A63F": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/John Williams/Star Wars: The Force Awakens (Original Motion Picture Soundtrack)"
+    "uri": "music-library/INTERNAL/music/John Williams/Star Wars_ The Force Awakens (Original Motion Picture Soundtrack)"
   },
   "37F7BF3F": {
     "service": "mpd",
@@ -264,7 +264,7 @@
   },
   "1746AB3F": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Madonna/Confessions on a Dance Floor"
+    "uri": "music-library/INTERNAL/music/Madonna/Confessions On a Dance Floor"
   },
   "D41B5C53": {
     "service": "mpd",
@@ -372,7 +372,7 @@
   },
   "878D1E40": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music/Stevie Wonder/Stevie Wonder: The Definitive Collection"
+    "uri": "music-library/INTERNAL/music/Stevie Wonder/Stevie Wonder_ The Definitive Collection"
   },
   "54D33A2D": {
     "service": "mpd",
@@ -392,6 +392,14 @@
   },
   "64006ADF": {
     "service": "mpd",
-    "uri": "music-library/INTERNAL/music//Super Mario Odyssey - Soundtrack"
+    "uri": "music-library/INTERNAL/music/Unknown Artist/Super Mario Odyssey - Soundtrack"
+  },
+  "67587651": {
+    "service": "mpd",
+    "uri": "music-library/INTERNAL/music/Alexander Rybak/Fairytale - Single"
+  },
+  "D4145450": {
+    "service": "mpd",
+    "uri": "music-library/INTERNAL/music/Sia/This Is Acting"
   }
 }
