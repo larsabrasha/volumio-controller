@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <title>Volumio</title>
+    <meta name="description" content="" />
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/touch-icons/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/touch-icons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/touch-icons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/touch-icons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/touch-icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/touch-icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/touch-icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/touch-icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/touch-icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/touch-icons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/touch-icons/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="mask-icon"
+      href="assets/touch-icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="assets/touch-icons/apple-touch-icon-180x180.png"
+    />
+    <meta name="msapplication-TileColor" content="#4bbe87" />
+    <meta name="msapplication-navbutton-color" content="black" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/touch-icons/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-config"
+      content="assets/touch-icons/browserconfig.xml"
+    />
+    <meta name="apple-mobile-web-app-title" content="Volumio" />
+    <meta name="theme-color" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="select-none flex h-full">
+    <div class="flex w-full justify-center p-5">
+      <div class="w-[500px]">
+        <img
+          id="coverart"
+          src=""
+          class="rounded-2xl"
+          width="500"
+          height="500"
+        />
+
+        <div class="p-3">
+          <div id="title" class="text-lg"></div>
+          <div id="artistAndAlbum"></div>
+        </div>
+
+        <div class="flex justify-center items-center my-3">
+          <svg
+            id="prev"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-16 h-16 p-3 mx-5 hover:cursor-pointer rounded-full"
+            style="display: none"
+            onclick="prev()"
+          >
+            <path
+              d="M9.195 18.44c1.25.713 2.805-.19 2.805-1.629v-2.34l6.945 3.968c1.25.714 2.805-.188 2.805-1.628V8.688c0-1.44-1.555-2.342-2.805-1.628L12 11.03v-2.34c0-1.44-1.555-2.343-2.805-1.629l-7.108 4.062c-1.26.72-1.26 2.536 0 3.256l7.108 4.061z"
+            />
+          </svg>
+          <svg
+            id="play"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-20 h-20 p-3 mx-5 hover:cursor-pointer rounded-full"
+            style="display: none"
+            onclick="play()"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            id="pause"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-20 h-20 p-3 mx-5 hover:cursor-pointer rounded-full"
+            style="display: none"
+            onclick="pause()"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            id="stop"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-20 h-20 p-3 mx-5 hover:cursor-pointer rounded-full"
+            style="display: none"
+            onclick="stop()"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            id="next"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-16 h-16 p-3 mx-5 hover:cursor-pointer rounded-full"
+            style="display: none"
+            onclick="next()"
+          >
+            <path
+              d="M5.055 7.06c-1.25-.714-2.805.189-2.805 1.628v8.123c0 1.44 1.555 2.342 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.342 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256L14.805 7.06C13.555 6.346 12 7.25 12 8.688v2.34L5.055 7.06z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="w-[300px] overflow-auto">
+        <ol id="queue" class="pb-7 px-5"></ol>
+      </div>
+    </div>
+
+    <script src="socket.io-2.3.0.js"></script>
+
+    <script>
+      const volumioUrl = "http://192.168.1.188:3000";
+      var currentState = {};
+
+      const socket = io(volumioUrl);
+
+      socket.on("pushState", function (data) {
+        socket.emit("getQueue");
+
+        currentState = data;
+
+        var titleElement = document.getElementById("title");
+        titleElement.innerHTML = currentState.title;
+
+        var artistAndAlbum = document.getElementById("artistAndAlbum");
+        artistAndAlbum.innerHTML =
+          (currentState.artist != null ? currentState.artist : "") +
+          (currentState.artist != null && currentState.album != null
+            ? " — "
+            : "") +
+          (currentState.album != null ? currentState.album : "");
+
+        var coverartElement = document.getElementById("coverart");
+        coverartElement.src = volumioUrl + currentState.albumart;
+
+        var prevElement = document.getElementById("prev");
+        prevElement.setAttribute(
+          "style",
+          currentState.service == "mpd" ? "display: block" : "display: none"
+        );
+
+        var playElement = document.getElementById("play");
+        playElement.setAttribute(
+          "style",
+          currentState.status == "pause" && currentState.service == "mpd"
+            ? "display: block"
+            : "display: none"
+        );
+
+        var pauseElement = document.getElementById("pause");
+        pauseElement.setAttribute(
+          "style",
+          (currentState.status == "play" || currentState.status == "stop") &&
+            currentState.service == "mpd"
+            ? "display: block"
+            : "display: none"
+        );
+
+        var stopElement = document.getElementById("stop");
+        stopElement.setAttribute(
+          "style",
+          currentState.status == "play" && currentState.service != "mpd"
+            ? "display: block"
+            : "display: none"
+        );
+
+        var nextElement = document.getElementById("next");
+        nextElement.setAttribute(
+          "style",
+          currentState.service == "mpd" ? "display: block" : "display: none"
+        );
+      });
+
+      socket.on("pushQueue", function (data) {
+        currentQueue = data;
+
+        var queueItemElements = "";
+        if (currentQueue != null && currentQueue.length > 0) {
+          for (var index = 0; index < currentQueue.length; index++) {
+            const queueItem = currentQueue[index];
+            var style = queueItem.name == currentState.title ? "background: #333;" : ""; 
+            queueItemElements +=
+              "<li class='py-2 px-4 hover:cursor-pointer rounded-lg' style='" + style + "' onclick='playQueueIndex(" +
+              index +
+              ")'>" +
+              (queueItem.service == "webradio"
+                ? queueItem.uri
+                : queueItem.name) +
+              "</li>";
+          }
+        }
+
+        var queueElement = document.getElementById("queue");
+        queueElement.innerHTML = queueItemElements;
+      });
+
+      socket.on("disconnect", function () {
+        console.log("disconnected");
+      });
+
+      socket.emit("getState");
+
+      function play() {
+        socket.emit("play");
+      }
+
+      function pause() {
+        socket.emit("pause");
+      }
+
+      function stop() {
+        socket.emit("stop");
+      }
+
+      function next() {
+        socket.emit("next");
+      }
+
+      function prev() {
+        socket.emit("prev");
+      }
+
+      function playQueueIndex(queueIndex) {
+        socket.emit("play", { value: queueIndex });
+      }
+    </script>
+  </body>
+</html>

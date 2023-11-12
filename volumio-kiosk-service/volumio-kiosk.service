@@ -1,0 +1,15 @@
+[Unit]
+Description = Volumio Kiosk
+
+[Service]
+ExecStart=/usr/bin/http-server -p 8080 /data/INTERNAL/programs/volumio-kiosk
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=volumio-kiosk
+User=volumio
+Group=volumio
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
