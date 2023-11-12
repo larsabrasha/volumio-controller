@@ -258,7 +258,7 @@
             const queueItem = currentQueue[index];
             var style = queueItem.name == currentState.title ? "background: #333;" : ""; 
             queueItemElements +=
-              "<li class='py-2 px-4 hover:cursor-pointer rounded-lg' style='" + style + "' onclick='playQueueIndex(" +
+              "<li id='track-" + index + "' class='py-2 px-4 hover:cursor-pointer rounded-lg' style='" + style + "' onclick='playQueueIndex(" +
               index +
               ")'>" +
               (queueItem.service == "webradio"
@@ -270,6 +270,18 @@
 
         var queueElement = document.getElementById("queue");
         queueElement.innerHTML = queueItemElements;
+
+        setTimeout(() => {
+          var currentTrackElement = document.getElementById("track-" + currentState.position);
+
+          if (typeof currentTrackElement.scrollIntoViewIfNeeded === "function") { 
+            currentTrackElement.scrollIntoViewIfNeeded();
+          } else {
+            currentTrackElement.scrollIntoView({ behavior: "smooth"});  
+          }
+        }, 100);
+
+        
       });
 
       socket.on("disconnect", function () {
