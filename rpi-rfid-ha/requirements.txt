@@ -1,0 +1,4 @@
+mfrc522>=0.0.7
+paho-mqtt>=1.6,<2.0
+spidev>=3.5
+PyYAML>=6.0

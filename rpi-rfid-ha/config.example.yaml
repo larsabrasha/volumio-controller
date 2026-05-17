@@ -1,0 +1,20 @@
+# Copy this file to config.yaml and fill in your MQTT broker details.
+# config.yaml is git-ignored so credentials stay out of the repo.
+
+mqtt:
+  host: 192.168.1.100        # IP or hostname of the Mosquitto broker (HA host)
+  port: 1883
+  username: rfid
+  password: changeme
+  client_id: rfid-bridge
+
+topics:
+  state: rfid/state          # online/offline (retained, LWT-managed)
+  placed: rfid/tag/placed    # published when a tag is placed on the reader
+  removed: rfid/tag/removed  # published when a tag is removed
+  current: rfid/tag/current  # currently-present tag UID (retained, empty when none)
+
+reader:
+  poll_interval: 0.1         # seconds between RC522 reads (10 Hz default)
+  removal_threshold: 5       # consecutive empty reads before declaring a tag removed
+                             # 5 × 0.1s = ~0.5s debounce, tolerates short read flakiness
