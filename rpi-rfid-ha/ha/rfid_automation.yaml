@@ -1,0 +1,430 @@
+# Generated from volumio-controller/music.json by generate_mappings.py.
+# Paste the whole block into Home Assistant via the UI:
+#   Settings → Automations → Create automation → "⋮ Edit in YAML"
+#   → replace the placeholder content with this file → Save.
+# Re-run generate_mappings.py to refresh the inline mappings, but bear in
+# mind that any edits made inside HA will be overwritten.
+
+alias: "RFID: play album on tag placed"
+description: "Look up the UID from rfid/tag/placed in the inline mappings and play it on Volumio."
+trigger:
+  - platform: mqtt
+    topic: rfid/tag/placed
+variables:
+  target_player: media_player.volumio_2
+  mappings:
+    # 14728453 — Steven Curtis Chapman/Signs of Life
+    "87820620721":
+      service: mpd
+      uri: "albums://Steven%20Curtis%20Chapman/Signs%20of%20Life"
+    # 24166653 — David Phelps/David Phelps
+    "154994627335":
+      service: mpd
+      uri: "albums://David%20Phelps/David%20Phelps"
+    # 34742950 — Pentatonix/PTX, Vol. 1
+    "225287163961":
+      service: mpd
+      uri: "albums://Pentatonix/PTX%2C%20Vol.%201"
+    # 64256353 — P.O.D./Satellite
+    "430123996017":
+      service: mpd
+      uri: "albums://P.O.D./Satellite"
+    # 74316650 — Movits!/Ut ur min skalle
+    "499044995187":
+      service: mpd
+      uri: "albums://Movits%21/Ut%20ur%20min%20skalle"
+    # 74886450 — Koinonia/Frontline
+    "500504481992":
+      service: mpd
+      uri: "albums://Koinonia/Frontline"
+    # 44F517DF — http://http-live.sr.se/p1-mp3-192
+    "296169758585":
+      service: webradio
+      uri: "http://http-live.sr.se/p1-mp3-192"
+    # 342961DF — http://http-live.sr.se/p2-mp3-192
+    "224032579491":
+      service: webradio
+      uri: "http://http-live.sr.se/p2-mp3-192"
+    # 27FBF551 — http://http-live.sr.se/p3-mp3-192
+    "171730882936":
+      service: webradio
+      uri: "http://http-live.sr.se/p3-mp3-192"
+    # D71F5A51 — http://http-live.sr.se/p4orebro-mp3-192
+    "923943981507":
+      service: webradio
+      uri: "http://http-live.sr.se/p4orebro-mp3-192"
+    # 27B34F51 — Nigel Kennedy & The Kroke Band/East Meets East
+    "170512044426":
+      service: mpd
+      uri: "albums://Nigel%20Kennedy%20%26%20The%20Kroke%20Band/East%20Meets%20East"
+    # 57D42E3E — Henry Jackman/Uncharted 4_ A Thief's End (Original Soundtrack)
+    "377221955219":
+      service: mpd
+      uri: "albums://Henry%20Jackman/Uncharted%204%3A%20A%20Thief%27s%20End%20%28Original%20Soundtrack%29"
+    # D7FDBB32 — Avicii/True
+    "927674872483":
+      service: mpd
+      uri: "albums://Avicii/True"
+    # 70F7ADE9 — Justin Timberlake/Man of the Woods (service inferred as mpd)
+    "485191707075":
+      service: mpd
+      uri: "albums://Justin%20Timberlake/Man%20of%20the%20Woods"
+    # C40F8E53 — Unknown Artist/1 Hour of Relaxing Zelda - Breath of the Wild Music
+    "842074575638":
+      service: mpd
+      uri: "albums:///1%20Hour%20of%20Relaxing%20Zelda%20-%20Breath%20of%20the%20Wild%20Music"
+    # 37EC1840 — Coldplay/A Rush of Blood to the Head
+    "240184213635":
+      service: mpd
+      uri: "albums://Coldplay/A%20Rush%20of%20Blood%20to%20the%20Head"
+    # 97EF1D40 — David Guetta/Listen
+    "652551733285":
+      service: mpd
+      uri: "albums://David%20Guetta/Listen"
+    # 57DA173E — Greg Edmonson/Uncharted 2_ Among Thieves (Original Soundtrack from the Video Game)
+    "377321111204":
+      service: mpd
+      uri: "albums://Greg%20Edmonson/Uncharted%202%3A%20Among%20Thieves%20%28Original%20Soundtrack%20from%20the%20Video%20Game%29"
+    # E73B6F51 — Dream Theater/Scenes From a Memory
+    "993134596578":
+      service: mpd
+      uri: "albums://Dream%20Theater/Scenes%20From%20a%20Memory"
+    # E75EB532 — The Real Group/Original
+    "993726378558":
+      service: mpd
+      uri: "albums://The%20Real%20Group/Original"
+    # 9700DE51 — Robbie Williams & Gary Barlow/In and Out of Consciousness_ Greatest Hits 1990-2010
+    "648554631448":
+      service: mpd
+      uri: "albums://Robbie%20Williams%20%26%20Gary%20Barlow/In%20and%20Out%20of%20Consciousness%3A%20Greatest%20Hits%201990-2010"
+    # 7752F551 — David Guetta/If We Ever (feat. Makeba) - Single
+    "512492917121":
+      service: mpd
+      uri: "albums://David%20Guetta/If%20We%20Ever%20%28feat.%20Makeba%29%20-%20Single"
+    # C7A83E31 — Toto/Falling in Between
+    "857521140064":
+      service: mpd
+      uri: "albums://Toto/Falling%20in%20Between"
+    # 9798F951 — Toto/Hold the Line_ the Very Best of Toto
+    "651106537895":
+      service: mpd
+      uri: "albums://Toto/Hold%20the%20Line%3A%20the%20Very%20Best%20of%20Toto"
+    # 47EC7551 — Pentatonix/PTX, Vol. III
+    "308909789583":
+      service: mpd
+      uri: "albums://Pentatonix/PTX%2C%20Vol.%20III"
+    # F73D7D51 — Eminem/Curtain Call_ The Hits
+    "1061888545254":
+      service: mpd
+      uri: "albums://Eminem/Curtain%20Call%3A%20The%20Hits"
+    # E74DA051 — Swedish House Mafia/Until Now
+    "993439797595":
+      service: mpd
+      uri: "albums://Swedish%20House%20Mafia/Until%20Now"
+    # 77BB0F40 — Dirty Loops/Loopified
+    "514239447171":
+      service: mpd
+      uri: "albums://Dirty%20Loops/Loopified"
+    # D4278F50 — Compilations/Frozen (Original Motion Picture Soundtrack)
+    "911196770348":
+      service: mpd
+      uri: "albums://Various%20Artists/Frozen%20%28Original%20Motion%20Picture%20Soundtrack%29"
+    # 44BC8750 — Pentatonix/PTX, Vol. II
+    "295220760623":
+      service: mpd
+      uri: "albums://Pentatonix/PTX%2C%20Vol.%20II"
+    # 94755E50 — Robbie Williams/Swing When You're Winning
+    "637624275183":
+      service: mpd
+      uri: "albums://Robbie%20Williams/Swing%20When%20You%27re%20Winning"
+    # 349643F9 — Avicii/Stories
+    "225859336472":
+      service: mpd
+      uri: "albums://Avicii/Stories"
+    # B4E40A50 — Ylvis/Volume 1
+    "776919994378":
+      service: mpd
+      uri: "albums://Ylvis/Volume%201"
+    # F4287E50 — Coldplay/X&Y
+    "1048651387122":
+      service: mpd
+      uri: "albums://Coldplay/X%26Y"
+    # 344A1150 — Coldplay/Mylo Xyloto
+    "224580948031":
+      service: mpd
+      uri: "albums://Coldplay/Mylo%20Xyloto"
+    # 2F3D69D9 — Coldplay/Ghost Stories
+    "202893810082":
+      service: mpd
+      uri: "albums://Coldplay/Ghost%20Stories"
+    # C4975B50 — Lady Gaga/Boys Boys Boys (Manhattan Clique) - Single
+    "844352933976":
+      service: mpd
+      uri: "albums://Lady%20Gaga/Boys%20Boys%20Boys%20%28Manhattan%20Clique%29%20-%20Single"
+    # D4010850 — Gorillaz/Demon Days
+    "910550388877":
+      service: mpd
+      uri: "albums://Gorillaz/Demon%20Days"
+    # B76EFC3F — Coldplay/Viva la Vida or Death and All His Friends
+    "787841040154":
+      service: mpd
+      uri: "albums://Coldplay/Viva%20la%20Vida%20or%20Death%20and%20All%20His%20Friends"
+    # 34EB5450 — Dream Theater/Train Of Thought
+    "227286470875":
+      service: mpd
+      uri: "albums://Dream%20Theater/Train%20Of%20Thought"
+    # 64A08250 — Coldplay/Paradise - Single
+    "432189624342":
+      service: mpd
+      uri: "albums://Coldplay/Paradise%20-%20Single"
+    # 041D5650 — Metallica/Metallica
+    "17672065055":
+      service: mpd
+      uri: "albums://Metallica/Metallica"
+    # 37DDFC3F — Earthsuit/Kaleidoscope Superior
+    "239947497257":
+      service: mpd
+      uri: "albums://Earthsuit/Kaleidoscope%20Superior"
+    # C4B38D50 — Coldplay/Ghost Stories
+    "844825972906":
+      service: mpd
+      uri: "albums://Coldplay/Ghost%20Stories"
+    # 54BD6550 — Movits!/Äppelknyckarjazz
+    "363954786524":
+      service: mpd
+      uri: "albums://Movits%21/%C3%84ppelknyckarjazz"
+    # A7FB0940 — Laleh/Sjung
+    "721471225877":
+      service: mpd
+      uri: "albums://Laleh/Sjung"
+    # D4EB5450 — Laleh/Colors
+    "914481238075":
+      service: mpd
+      uri: "albums://Laleh/Colors"
+    # 74B13550 — Salem Al Fakir/This Is Who I Am
+    "501189267616":
+      service: mpd
+      uri: "albums://Salem%20Al%20Fakir/This%20Is%20Who%20I%20Am"
+    # E49B5250 — Salem Al Fakir/Astronaut
+    "981858406525":
+      service: mpd
+      uri: "albums://Salem%20Al%20Fakir/Astronaut"
+    # D4766B53 — David Phelps/Revelation
+    "912519811994":
+      service: mpd
+      uri: "albums://David%20Phelps/Revelation"
+    # D735DE3F — Amy MacDonald/This Is The Life
+    "924321726211":
+      service: mpd
+      uri: "albums://Amy%20MacDonald/This%20Is%20The%20Life"
+    # A7CED83F — Amy Macdonald/A Curious Thing
+    "720729816974":
+      service: mpd
+      uri: "albums://Amy%20Macdonald/A%20Curious%20Thing"
+    # 144C6C53 — Beyoncé/BEYONCÉ
+    "87181513575":
+      service: mpd
+      uri: "albums://Beyonc%C3%A9/BEYONC%C3%89"
+    # 77D0EA3F — Beyoncé/I Am...Sasha Fierce (Platinum Edition - Audio Version)
+    "514606120818":
+      service: mpd
+      uri: "albums://Beyonc%C3%A9/I%20Am...Sasha%20Fierce%20%28Platinum%20Edition%20-%20Audio%20Version%29"
+    # 54CC8753 — Carola/Störst av allt
+    "364208673612":
+      service: mpd
+      uri: "albums://Carola/St%C3%B6rst%20av%20allt"
+    # 347A6653 — Elvis Presley/That's the Way It Is
+    "225391825787":
+      service: mpd
+      uri: "albums://Elvis%20Presley/That%27s%20the%20Way%20It%20Is"
+    # A4C27753 — Erik Tilling/Hopp
+    "707637236546":
+      service: mpd
+      uri: "albums://Erik%20Tilling/Hopp"
+    # D7D8B43F — Erik Tilling/I din hand ligger mina dagar
+    "927053660036":
+      service: mpd
+      uri: "albums://Erik%20Tilling/I%20din%20hand%20ligger%20mina%20dagar"
+    # B73AF83F — Greg Edmonson/Uncharted_ Drake's Fortune (Original Soundtrack from the Video Game)
+    "786968362826":
+      service: mpd
+      uri: "albums://Greg%20Edmonson/Uncharted%3A%20Drake%27s%20Fortune%20%28Original%20Soundtrack%20from%20the%20Video%20Game%29"
+    # A4D69253 — Greg Edmonson/Uncharted™ 3_ Drake's Deception (Original Soundtrack)
+    "707974550451":
+      service: mpd
+      uri: "albums://Greg%20Edmonson/Uncharted%E2%84%A2%203%3A%20Drake%27s%20Deception%20%28Original%20Soundtrack%29"
+    # 771C1E40 — Henry Jackman/Uncharted_ The Lost Legacy (Original Game Soundtrack)
+    "511572852789":
+      service: mpd
+      uri: "albums://Henry%20Jackman/Uncharted%3A%20The%20Lost%20Legacy%20%28Original%20Game%20Soundtrack%29"
+    # 970AE33F — Howard Shore/The Lord of the Rings_ the Fellowship of the Ring
+    "648722726721":
+      service: mpd
+      uri: "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Fellowship%20of%20the%20Ring"
+    # E4FB5153 — Howard Shore/The Lord of the Rings_ the Return of the King
+    "983468954397":
+      service: mpd
+      uri: "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Return%20of%20the%20King"
+    # 04E17E53 — Howard Shore/The Lord of the Rings_ the Two Towers
+    "20963021768":
+      service: mpd
+      uri: "albums://Howard%20Shore/The%20Lord%20of%20the%20Rings%3A%20the%20Two%20Towers"
+    # D700A63F — John Williams/Star Wars_ The Force Awakens (Original Motion Picture Soundtrack)
+    "923428863822":
+      service: mpd
+      uri: "albums://John%20Williams/Star%20Wars%3A%20The%20Force%20Awakens%20%28Original%20Motion%20Picture%20Soundtrack%29"
+    # 37F7BF3F — Jonathan Johansson/Klagomuren
+    "240379707200":
+      service: mpd
+      uri: "albums://Jonathan%20Johansson/Klagomuren"
+    # 1746AB3F — Madonna/Confessions On a Dance Floor
+    "99969875909":
+      service: mpd
+      uri: "albums://Madonna/Confessions%20On%20a%20Dance%20Floor"
+    # D41B5C53 — Mats Norrefalk & Ulf Samuelsson/Incontro
+    "910992102336":
+      service: mpd
+      uri: "albums://Mats%20Norrefalk%20%26%20Ulf%20Samuelsson/Incontro"
+    # 67F90340 — Michael W. Smith/Change Your World
+    "446559371485":
+      service: mpd
+      uri: "albums://Michael%20W.%20Smith/Change%20Your%20World"
+    # D784E53F — Michael W. Smith/Go West Young Man
+    "925647585161":
+      service: mpd
+      uri: "albums://Michael%20W.%20Smith/Go%20West%20Young%20Man"
+    # D4F15D53 — English Chamber Orchestra, Jeffrey Tate & Nigel Kennedy/Inner Thoughts
+    "914582491947":
+      service: mpd
+      uri: "albums://English%20Chamber%20Orchestra%2C%20Jeffrey%20Tate%20%26%20Nigel%20Kennedy/Inner%20Thoughts"
+    # A4BF6553 — Nigel Kennedy/Kreisler
+    "707585725229":
+      service: mpd
+      uri: "albums://Nigel%20Kennedy/Kreisler"
+    # D72AFD3F — Nigel Kennedy/Vivaldi The Four Seasons
+    "924139208511":
+      service: mpd
+      uri: "albums://Nigel%20Kennedy/Vivaldi%20The%20Four%20Seasons"
+    # B735A33F — Per-Erik Hallin/Morgonluft
+    "786878906142":
+      service: mpd
+      uri: "albums://Per-Erik%20Hallin/Morgonluft"
+    # A4817B53 — Robyn/Don't Stop the Music
+    "706546979597":
+      service: mpd
+      uri: "albums://Robyn/Don%27t%20Stop%20the%20Music"
+    # F764CB3F — Robert Wells/Rhapsody in Rock
+    "1062547963751":
+      service: mpd
+      uri: "albums://Robert%20Wells/Rhapsody%20in%20Rock"
+    # C7DEB03F — Robert Wells/Rhapsody In Rock - Part Two
+    "858434584470":
+      service: mpd
+      uri: "albums://Robert%20Wells/Rhapsody%20In%20Rock%20-%20Part%20Two"
+    # 57CAED3F — Robert Wells/Rhapsody in Rock III
+    "377066700623":
+      service: mpd
+      uri: "albums://Robert%20Wells/Rhapsody%20in%20Rock%20III"
+    # C7ADAA3F — Steven Curtis Chapman/Declaration
+    "857612107775":
+      service: mpd
+      uri: "albums://Steven%20Curtis%20Chapman/Declaration"
+    # F47D7853 — Steven Curtis Chapman/This Moment (Bonus Track Version)
+    "1050077057954":
+      service: mpd
+      uri: "albums://Steven%20Curtis%20Chapman/This%20Moment%20%28Bonus%20Track%20Version%29"
+    # A4B95253 — The Corrs/Unplugged
+    "707483816732":
+      service: mpd
+      uri: "albums://The%20Corrs/Unplugged"
+    # E736A63F — The Pussycat Dolls/PCD
+    "993054310216":
+      service: mpd
+      uri: "albums://The%20Pussycat%20Dolls/PCD"
+    # 674EAE3F — Toto/Fahrenheit
+    "443701673912":
+      service: mpd
+      uri: "albums://Toto/Fahrenheit"
+    # 67C12240 — Toto/Toto XIV
+    "445621878980":
+      service: mpd
+      uri: "albums://Toto/Toto%20XIV"
+    # B46D6E53 — Agnetha Fältskog/A
+    "774930060260":
+      service: mpd
+      uri: "albums://Agnetha%20F%C3%A4ltskog/A"
+    # 1784B83F — Benny Andersson/Piano
+    "101010915092":
+      service: mpd
+      uri: "albums://Benny%20Andersson/Piano"
+    # A714CC3F — Hillsong/Blessed
+    "717608468288":
+      service: mpd
+      uri: "albums://Hillsong/Blessed"
+    # 04465153 — Majoy/Give Love
+    "18359604032":
+      service: mpd
+      uri: "albums://Majoy/Give%20Love"
+    # 374EED3F — The Beatles/1
+    "237547372459":
+      service: mpd
+      uri: "albums://The%20Beatles/1"
+    # 643F5953 — The Ark/The Ark, Arkeology - The Complete Singles Collection
+    "430559548241":
+      service: mpd
+      uri: "albums://The%20Ark/The%20Ark%2C%20Arkeology%20-%20The%20Complete%20Singles%20Collection"
+    # C7841F40 — Tower Of Power/Soul Vaccination Live [Bonus Track]
+    "856915132444":
+      service: mpd
+      uri: "albums://Tower%20Of%20Power/Soul%20Vaccination%20Live%20%5BBonus%20Track%5D"
+    # E74CC43F — Joybells/Having Church
+    "993425375056":
+      service: mpd
+      uri: "albums://Joybells/Having%20Church"
+    # 17F8AF3F — The Cast of Frozen/Frozen (Original Motion Picture Soundtrack)
+    "102956482431":
+      service: mpd
+      uri: "albums://The%20Cast%20of%20Frozen/Frozen%20%28Original%20Motion%20Picture%20Soundtrack%29"
+    # 878D1E40 — Stevie Wonder/Stevie Wonder_ The Definitive Collection
+    "582188154964":
+      service: mpd
+      uri: "albums://Stevie%20Wonder/Stevie%20Wonder%3A%20The%20Definitive%20Collection"
+    # 54D33A2D — Melody Gardot/My One and Only Thrill
+    "364321058192":
+      service: mpd
+      uri: "albums://Melody%20Gardot/My%20One%20and%20Only%20Thrill"
+    # 84A12B2D — Melody Gardot/The Absence
+    "569639644451":
+      service: mpd
+      uri: "albums://Melody%20Gardot/The%20Absence"
+    # 141695DF — Steven Curtis Chapman/Speechless
+    "86278266696":
+      service: mpd
+      uri: "albums://Steven%20Curtis%20Chapman/Speechless"
+    # 57EF123E — Per-Erik Hallin/Better Late Than Never
+    "377673105044":
+      service: mpd
+      uri: "albums://Per-Erik%20Hallin/Better%20Late%20Than%20Never"
+    # 64006ADF — Unknown Artist/Super Mario Odyssey - Soundtrack
+    "429503733713":
+      service: mpd
+      uri: "albums:///Super%20Mario%20Odyssey%20-%20Soundtrack"
+    # 67587651 — Alexander Rybak/Fairytale - Single
+    "443865780504":
+      service: mpd
+      uri: "albums://Alexander%20Rybak/Fairytale%20-%20Single"
+    # D4145450 — Sia/This Is Acting
+    "910874136772":
+      service: mpd
+      uri: "albums://Sia/This%20Is%20Acting"
+  selected: "{{ mappings.get(trigger.payload) }}"
+condition: "{{ selected is not none }}"
+action:
+  - service: media_player.play_media
+    target:
+      entity_id: "{{ target_player }}"
+    data:
+      media_content_id: >-
+        {{ {'service': selected.service, 'uri': selected.uri} | tojson }}
+      media_content_type: music
+mode: single
