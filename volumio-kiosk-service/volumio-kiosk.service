@@ -1,15 +1,14 @@
 [Unit]
-Description = Volumio Kiosk
+Description=Volumio Kiosk (static web UI for Volumio)
+After=network-online.target
+Wants=network-online.target
 
 [Service]
-ExecStart=/usr/bin/http-server -p 8080 /data/INTERNAL/programs/volumio-kiosk
-Restart=always
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=volumio-kiosk
+ExecStart=/usr/bin/python3 -m http.server 8080 --directory /data/INTERNAL/programs/volumio-kiosk
+Restart=on-failure
+RestartSec=3
 User=volumio
 Group=volumio
-Environment=NODE_ENV=production
 
 [Install]
 WantedBy=multi-user.target

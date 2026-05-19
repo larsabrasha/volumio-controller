@@ -60,12 +60,15 @@ def main():
     state_topic = cfg["topics"]["state"]
     poll_interval = cfg["reader"].get("poll_interval", 0.1)
     removal_threshold = cfg["reader"].get("removal_threshold", 5)
+    reinit_interval = cfg["reader"].get("reinit_interval", 30)
 
     client = make_client(cfg)
     reader = SimpleMFRC522()
 
     current_uid = None
     miss_count = 0
+    error_streak = 0
+    last_reinit = time.monotonic()
     running = True
 
     def shutdown(signum, frame):
@@ -76,34 +79,63 @@ def main():
     signal.signal(signal.SIGINT, shutdown)
     signal.signal(signal.SIGTERM, shutdown)
 
-    log.info("RFID bridge started, polling every %.2fs (removal threshold=%d)",
-             poll_interval, removal_threshold)
+    log.info(
+        "RFID bridge started, polling every %.2fs (removal threshold=%d, reinit every %ds)",
+        poll_interval, removal_threshold, reinit_interval,
+    )
 
     try:
         while running:
-            uid = reader.read_id_no_block()
-            if uid is not None:
-                miss_count = 0
-                uid_str = str(uid)
-                if uid_str != current_uid:
-                    if current_uid is not None:
-                        log.info("Tag swapped: %s -> %s", current_uid, uid_str)
-                        client.publish(removed_topic, current_uid, qos=1)
-                    current_uid = uid_str
-                    log.info("Tag placed: %s", uid_str)
-                    client.publish(placed_topic, uid_str, qos=1)
-                    client.publish(current_topic, uid_str, qos=1, retain=True)
-                else:
-                    log.debug("Tag still present: %s", uid_str)
-            elif current_uid is not None:
-                miss_count += 1
-                log.debug("Empty read %d/%d (current=%s)", miss_count, removal_threshold, current_uid)
-                if miss_count >= removal_threshold:
-                    log.info("Tag removed: %s", current_uid)
-                    client.publish(removed_topic, current_uid, qos=1)
-                    client.publish(current_topic, "", qos=1, retain=True)
-                    current_uid = None
+            now = time.monotonic()
+            # Periodic soft-reset: works around RC522 chips that silently
+            # stop detecting tags after a while. No-op when chip is healthy.
+            if now - last_reinit >= reinit_interval:
+                try:
+                    reader.READER.MFRC522_Init()
+                    log.debug("Periodic RC522 re-init")
+                except Exception as e:
+                    log.warning("Periodic re-init failed: %s", e)
+                last_reinit = now
+
+            try:
+                uid = reader.read_id_no_block()
+                if uid is not None:
                     miss_count = 0
+                    uid_str = str(uid)
+                    if uid_str != current_uid:
+                        if current_uid is not None:
+                            log.info("Tag swapped: %s -> %s", current_uid, uid_str)
+                            client.publish(removed_topic, current_uid, qos=1)
+                        current_uid = uid_str
+                        log.info("Tag placed: %s", uid_str)
+                        client.publish(placed_topic, uid_str, qos=1)
+                        client.publish(current_topic, uid_str, qos=1, retain=True)
+                    else:
+                        log.debug("Tag still present: %s", uid_str)
+                elif current_uid is not None:
+                    miss_count += 1
+                    log.debug("Empty read %d/%d (current=%s)", miss_count, removal_threshold, current_uid)
+                    if miss_count >= removal_threshold:
+                        log.info("Tag removed: %s", current_uid)
+                        client.publish(removed_topic, current_uid, qos=1)
+                        client.publish(current_topic, "", qos=1, retain=True)
+                        current_uid = None
+                        miss_count = 0
+                error_streak = 0
+            except Exception as e:
+                error_streak += 1
+                log.warning("Read/publish error %d: %s", error_streak, e)
+                if error_streak >= 3:
+                    try:
+                        reader.READER.MFRC522_Init()
+                        last_reinit = time.monotonic()
+                        log.warning("Forced RC522 re-init after errors")
+                    except Exception as re:
+                        log.error("Forced re-init failed: %s", re)
+                if error_streak >= 10:
+                    log.error("Persistent errors, exiting for systemd restart")
+                    break
+
             time.sleep(poll_interval)
     finally:
         log.info("Publishing offline state and disconnecting")

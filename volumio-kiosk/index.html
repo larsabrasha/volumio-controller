@@ -187,10 +187,10 @@
     <script src="socket.io-2.3.0.min.js"></script>
 
     <script>
-      const volumioUrl = "http://192.168.1.188:3000";
+      var volumioUrl = "http://" + window.location.hostname + ":3000";
       var currentState = {};
 
-      const socket = io(volumioUrl);
+      var socket = io(volumioUrl);
 
       socket.on("pushState", function (data) {
         socket.emit("getQueue");
@@ -255,7 +255,7 @@
         var queueItemElements = "";
         if (currentQueue != null && currentQueue.length > 0) {
           for (var index = 0; index < currentQueue.length; index++) {
-            const queueItem = currentQueue[index];
+            var queueItem = currentQueue[index];
             var style = queueItem.name == currentState.title ? "background: #333;" : ""; 
             queueItemElements +=
               "<li id='track-" + index + "' class='py-2 px-4 hover:cursor-pointer rounded-lg' style='" + style + "' onclick='playQueueIndex(" +
@@ -271,13 +271,14 @@
         var queueElement = document.getElementById("queue");
         queueElement.innerHTML = queueItemElements;
 
-        setTimeout(() => {
+        setTimeout(function () {
           var currentTrackElement = document.getElementById("track-" + currentState.position);
+          if (!currentTrackElement) return;
 
-          if (typeof currentTrackElement.scrollIntoViewIfNeeded === "function") { 
+          if (typeof currentTrackElement.scrollIntoViewIfNeeded === "function") {
             currentTrackElement.scrollIntoViewIfNeeded();
-          } else {
-            currentTrackElement.scrollIntoView({ behavior: "smooth"});  
+          } else if (typeof currentTrackElement.scrollIntoView === "function") {
+            currentTrackElement.scrollIntoView();
           }
         }, 100);
 

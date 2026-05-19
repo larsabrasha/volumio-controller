@@ -18,3 +18,7 @@ reader:
   poll_interval: 0.1         # seconds between RC522 reads (10 Hz default)
   removal_threshold: 5       # consecutive empty reads before declaring a tag removed
                              # 5 × 0.1s = ~0.5s debounce, tolerates short read flakiness
+  reinit_interval: 30        # seconds between soft-resets of the RC522 chip.
+                             # Works around chips that silently stop detecting
+                             # tags after a while. Set higher (e.g. 300) if your
+                             # reader is rock-solid, or lower if it still hangs.

@@ -37,22 +37,22 @@ variables:
     "500504481992":
       service: mpd
       uri: "albums://Koinonia/Frontline"
-    # 44F517DF — http://http-live.sr.se/p1-mp3-192
+    # 44F517DF — https://ljud1-cdn.sr.se/lc/p1.m3u8
     "296169758585":
       service: webradio
-      uri: "http://http-live.sr.se/p1-mp3-192"
-    # 342961DF — http://http-live.sr.se/p2-mp3-192
+      uri: "https://ljud1-cdn.sr.se/lc/p1.m3u8"
+    # 342961DF — https://ljud1-cdn.sr.se/lc/p2.m3u8
     "224032579491":
       service: webradio
-      uri: "http://http-live.sr.se/p2-mp3-192"
-    # 27FBF551 — http://http-live.sr.se/p3-mp3-192
+      uri: "https://ljud1-cdn.sr.se/lc/p2.m3u8"
+    # 27FBF551 — https://ljud1-cdn.sr.se/lc/p3.m3u8
     "171730882936":
       service: webradio
-      uri: "http://http-live.sr.se/p3-mp3-192"
-    # D71F5A51 — http://http-live.sr.se/p4orebro-mp3-192
+      uri: "https://ljud1-cdn.sr.se/lc/p3.m3u8"
+    # D71F5A51 — https://ljud1-cdn.sr.se/lc/p4oreb.m3u8
     "923943981507":
       service: webradio
-      uri: "http://http-live.sr.se/p4orebro-mp3-192"
+      uri: "https://ljud1-cdn.sr.se/lc/p4oreb.m3u8"
     # 27B34F51 — Nigel Kennedy & The Kroke Band/East Meets East
     "170512044426":
       service: mpd
